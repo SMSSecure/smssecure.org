@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="<%= res.__('LANG') %>" prefix="og: http://ogp.me/ns#">
+<head>
+	<title>SMSSecure | <%= res.__('SLOGAN') %></title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
+
+	<meta name="description" content="<%= res.__('DESCRIPTION') %>" />
+	<link rel="canonical" href="http://<%= req.headers.host %><%= req.url %>" />
+	<link rel="shortlink" href="http://<%= req.headers.host %><%= req.url %>" />
+	<meta property="og:site_name" content="<%= res.__('SMSSecure') %>" />
+	<meta property="og:title" content="<%= res.__('SMSSecure') %>" />
+	<meta property="og:description" content="<%= res.__('SLOGAN') %>" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://<%= req.headers.host %><%= req.url %>" />
+
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<link rel="stylesheet" href="/css/font-awesome.css">
+	<link rel="stylesheet" href="/css/style.css" media="screen"/>
+	<link rel="stylesheet" href="/css/gh-fork-ribbon.css" media="screen"/>
+
+	<link rel="shortcut icon" href="/images/favicon.png">
+
+	<script src="/js/jquery.js"></script>
+
+</head>
+
+<body>
+	<div class="github-fork-ribbon-wrapper right">
+		<div class="github-fork-ribbon">
+			<a href="https://github.com/SMSSecure/SMSSecure"><%= res.__('FORK_US') %></a>
+		</div>
+	</div>
+	<div id="wrapper">
+
+		<div id="header" class="content-block">
+			<div class="top clearfix">
+				<div class="pull-left">
+					<h1><a class="scrollTo" href="#wrapper"><img class="logo" src="/images/logo-header.png" alt="Nuolez.io" height="60" width="225"><img class="logo-mobile" src="/images/logo-mobile.png" alt="Nuolez.io" height="30" width="120"></a></h1>
+				</div>
+			</div>
+			<div class="center">
+				<div class="slogan">
+					<%= res.__('CATCH_PHRASE') %>
+				</div>
+				<div class="secondary-slogan">
+					<%- res.__('SUBTITLE', '<del>', '</del>') %>
+				</div>
+			</div>
+			<div class="bottom">
+				<a class="scrollTo" href="#app">
+					<img src="/images/arrow_down.png" alt="">
+				</a>
+			</div>
+		</div>
+
+		<div class="content-block" id="app">
+			<div class="container">
+				<header class="block-heading cleafix">
+					<h4><%= res.__('DESCRIPTION') %></h4>
+				</header>
+				<div class="block-body">
+					<div class="row">
+						<div class="col-md-6">
+							<h2><%= res.__('GET_THE_APP') %></h2>
+							<p class="text-center">
+								<a href="https://f-droid.org/repository/browse/?fdid=org.smssecure.smssecure"><img src="/images/fdroid.png" alt="On F-Droid"></a><br>
+								<!-- <a href="https://play.google.com/store/apps/details?id=org.smssecure.smssecure"><img src="/images/play.png" alt="On Google Play"></a>
+								<a href=""><img src="/images/amazon.png" alt="On Amazon Appstore"></a> -->
+							</p>
+							<div class="text-center">
+								<i class="fa fa-android"></i>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<h2><%= res.__('GET_SOURCE_CODE') %></h2>
+							<p><%= res.__('SOURCE_CODE_TEXT') %></p>
+							<p><a href="https://github.com/SMSSecure/SMSSecure" class="btn btn-o btn-lg"><%= res.__('GITHUB') %></a></p>
+							<div class="text-center">
+								<i class="fa fa-github"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<% if (commit !== null){ %>
+		<div class="content-block" id="git">
+			<div class="container text-center">
+				<p><%- res.__('LAST_COMMIT', '<a href="'+commit.link+'">'+commit.title+'</a>', '<a href="https://github.com/'+commit.author+'">'+commit.author+'</a>', commit.date) %></p>
+			</div>
+		</div>
+		<% } %>
+
+		<div class="content-block parallax" id="description">
+			<div class="container text-center">
+				<div class="block-body">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="item">
+								<i class="fa fa-magic"></i>
+								<h2><%= res.__('EASY') %></h2>
+								<p><%= res.__('EASY_TEXT') %></p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="item">
+								<i class="fa fa-cogs"></i>
+								<h2><%= res.__('RELIABLE') %></h2>
+								<p><%= res.__('RELIABLE_TEXT') %></p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="item">
+								<i class="fa fa-lock"></i>
+								<h2><%= res.__('PRIVATE') %></h2>
+								<p><%= res.__('PRIVATE_TEXT') %></p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-push-3 col-md-3">
+							<div class="item">
+								<i class="fa fa-eye-slash"></i>
+								<h2><%= res.__('SAFE') %></h2>
+								<p><%= res.__('SAFE_TEXT') %></p>
+							</div>
+						</div>
+						<div class="col-md-push-3 col-md-3">
+							<div class="item">
+								<i class="fa fa-check"></i>
+								<h2><%= res.__('OSS') %></h2>
+								<p><%= res.__('OSS_TEXT') %></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content-block" id="irc">
+			<div class="container">
+				<h2><%= res.__('COMMUNITY') %></h2>
+				<p><%- res.__('COMMUNITY_TEXT', '<a href="https://webchat.freenode.net/?channels=SMSSecure">', '</a>') %></p>
+			</div>
+		</div>
+
+		<div class="content-block" id="footer">
+			<div class="container text-center">
+				<div class="col-md-3 col-xs-6">
+					<a aria-label="<%= res.__('GITHUB_BADGE_WATCH_LABEL') %>" data-count-aria-label="<%= res.__('GITHUB_BADGE_WATCH_COUNT_LABEL') %>" data-count-api="/repos/SMSSecure/SMSSecure#subscribers_count" data-count-href="/SMSSecure/SMSSecure/watchers" data-style="mega" data-icon="octicon-eye" href="https://github.com/SMSSecure/SMSSecure" class="github-button"><%= res.__('GITHUB_BADGE_WATCH') %></a>
+				</div>
+				<div class="col-md-3 col-xs-6">
+					<a aria-label="<%= res.__('GITHUB_BADGE_STAR_LABEL') %>" data-count-aria-label="<%= res.__('GITHUB_BADGE_STAR_COUNT_LABEL') %>" data-count-api="/repos/SMSSecure/SMSSecure#stargazers_count" data-count-href="/SMSSecure/SMSSecure/stargazers" data-style="mega" data-icon="octicon-star" href="https://github.com/SMSSecure/SMSSecure" class="github-button"><%= res.__('GITHUB_BADGE_STAR') %></a>
+				</div>
+				<div class="col-md-3 col-xs-6">
+					<a aria-label="<%= res.__('GITHUB_BADGE_FORK_LABEL') %>" data-count-aria-label="<%= res.__('GITHUB_BADGE_FORK_COUNT_LABEL') %>" data-count-api="/repos/SMSSecure/SMSSecure#forks_count" data-count-href="/SMSSecure/SMSSecure/network" data-style="mega" data-icon="octicon-git-branch" href="https://github.com/SMSSecure/SMSSecure/fork" class="github-button"><%= res.__('GITHUB_BADGE_FORK') %></a>
+				</div>
+				<div class="col-md-3 col-xs-6">
+					<a aria-label="<%= res.__('GITHUB_BADGE_ISSUE_LABEL') %>" data-count-aria-label="<%= res.__('GITHUB_BADGE_ISSUE_COUNT_LABEL') %>" data-count-api="/repos/SMSSecure/SMSSecure#open_issues_count" data-style="mega" data-icon="octicon-issue-opened" href="https://github.com/SMSSecure/SMSSecure/issues" class="github-button"><%= res.__('GITHUB_BADGE_ISSUE') %></a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="/js/bootstrap.js"></script>
+	<script src="/js/jquery-actual.js"></script>
+	<script src="/js/jquery-scrollto.js"></script>
+	<script src="/js/script.js"></script>
+	<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+
+</body>
+</html>

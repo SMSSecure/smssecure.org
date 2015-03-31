@@ -1,0 +1,16 @@
+node_modules/*
+npm-debug.log
+
+assets/css/bootstrap.css
+assets/css/font-awesome.css
+
+assets/fonts/fontawesome-webfont.eot
+assets/fonts/fontawesome-webfont.svg
+assets/fonts/fontawesome-webfont.ttf
+assets/fonts/fontawesome-webfont.woff
+assets/fonts/FontAwesome.otf
+
+assets/js/bootstrap.js
+assets/js/jquery-actual.js
+assets/js/jquery-scrollto.js
+assets/js/jquery.js

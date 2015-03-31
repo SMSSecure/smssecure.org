@@ -1,0 +1,33 @@
+{
+  "name": "smssecure.org",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Website of the SMSSecure project",
+  "scripts": {
+    "start": "bash ./start.sh"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SMSSecure/smssecure.org.git"
+  },
+  "author": "Bastien Le Querrec",
+  "license": "AGPL-3.0",
+  "engines": {
+    "node": "0.12.x"
+  },
+  "dependencies": {
+    "actual": "dreamerslab/jquery.actual",
+    "async": "^0.9.0",
+    "bootstrap": "^3.3.4",
+    "ejs": "^2.3.1",
+    "express": "^4.12.3",
+    "fast-feed": "^1.0.12",
+    "font-awesome": "^4.3.0",
+    "i18n": "^0.5.0",
+    "jquery": "^2.1.3",
+    "jquery.scrollto": "^2.1.0",
+    "moment": "^2.9.0",
+    "request": "^2.54.0"
+  }
+}

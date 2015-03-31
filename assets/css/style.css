@@ -1,0 +1,249 @@
+/*
+Theme Name: Flusk
+Theme URI: https://github.com/technext/Flusk
+License: GNU General Public License v2
+License URI: http://www.gnu.org/licenses/gpl-2.0.txt
+*/
+
+@font-face {
+	font-family: 'Alegreya SC';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Alegreya SC'), local('AlegreyaSC-Regular'), url(../fonts/AlegreyaSC-Regular.woff) format('woff');
+}
+
+
+@font-face {
+	font-family: 'Quattrocento';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Quattrocento'), local('Quattrocento-Regular'), url(../fonts/Quattrocento.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Quattrocento Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Quattrocento Sans'), local('QuattrocentoSans'), url(../fonts/Quattrocento-Sans.woff) format('woff');
+}
+
+* {outline: none !important;}
+
+::selection {
+	background-color: #475B6F;
+	color: #fff;
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	-webkit-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	overflow-y: scroll;
+}
+
+body {
+	color: #6a6a6a;
+	background: #f1f0f0;
+}
+
+p {margin: 0 0 20px 0;	}
+
+img {max-width: 100%;}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+a{
+	color: #4da7ca;
+	-o-transition: all .4s;
+	-ms-transition: all .4s;
+	-moz-transition: all .4s;
+	-webkit-transition: all .4s;
+	transition: all .4s;
+}
+
+a:hover {
+	color: #4290ae;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 15px 0;
+	color: #3A4F52;
+	font-family: 'Quattrocento Sans';
+}
+
+.btn{border-radius: 0;}
+.btn-o {
+	border: 1px solid #3A4F52;
+	color: #3A4F52;
+}
+.btn-o:hover {
+	background: #3A4F52;
+	color: white;
+}
+.btn.btn-o-white {
+	border: 1px solid white;
+	color: white;
+	background: transparent;
+}
+.btn.btn-o-white:hover {
+	background: white;
+	color: #6a6a6a;
+}
+
+#header{
+	position: relative;
+	text-align: center;
+	padding: 0 !important;
+	height: 800px;
+}
+
+#header > .center {
+	padding-top: 350px;
+}
+
+#header .top {
+	position:fixed;
+	top:0;
+	width: 100%;
+	padding: 30px;
+	height: auto;
+	z-index: 500;
+	-o-transition: all .5s;
+	-ms-transition: all .5s;
+	-moz-transition: all .5s;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+}
+#header .top.solid {
+	background: #181a26;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#header .top h1{
+	margin-bottom: 0;
+}
+#header .top.solid .toggleDrawer i {
+	padding-top: 18px;
+}
+
+#header .logo, #header .toggleDrawer{
+	font-family: 'Quattrocento';
+	color: white;
+}
+@media (max-width: 992px) {
+	.logo {
+		display: none;
+	}
+}
+@media (min-width: 992px) {
+	.logo-mobile {
+		display: none;
+	}
+}
+
+#header .slogan{
+	margin-bottom: 15px;
+	line-height: 1em;
+	font-family: 'Quattrocento';
+	color: white;
+}
+@media (min-width: 992px) {
+	#header .slogan{
+		font-size: 4.5em;
+	}
+}
+@media (max-width: 992px) {
+	#header .slogan{
+		font-size: 3.5em;
+	}
+}
+
+#header .secondary-slogan{
+	font-size: 1.6em;
+	color: rgba(255,255,255,.6);
+	line-height: 1em;
+	font-family: 'Alegreya SC';
+}
+
+#header > .bottom {
+	position: absolute;
+	bottom: 75px;
+	text-align: center;
+	width: 100%;
+}
+#header > .bottom a img {
+	width: 50px;
+}
+#header > .bottom a {
+	opacity: 0.7;
+}
+#header > .bottom a:hover {
+	opacity: 1;
+}
+
+.content-block{
+	background:transparent no-repeat center center fixed;
+	-webkit-background-size:100%;
+	-moz-background-size:100%;
+	-o-background-size:100%;
+	background-size:100%;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	overflow:hidden;
+	padding: 60px 0;
+	text-align: justify;
+}
+.fa-github, .fa-android {
+	font-size: 192px;
+}
+#git {
+	padding-top: 25px;
+	padding-bottom: 5px;
+	background-color: #d8d8d8;
+}
+
+.block-body {
+	margin-top: 60px;
+}
+
+#header {
+	background-image: url(../images/header-bg.jpg);
+	background-attachment: scroll;
+	background-position: 100% 50%;
+}
+#description {
+	padding-top: 10px;
+	background-image: url(../images/texting.jpg);
+	color: white;
+}
+.item i {
+	font-size: 60px;
+}
+.item {
+	padding: 0 25px;
+}
+#description h1, #description h2{
+	color: white;
+}
+
+@media (max-width: 598px) {
+	#description{
+		background-attachment: scroll;
+	}
+}
+
+#footer{
+	background: #23263a;
+	color: white;
+}
+#footer h3{
+	color: white;
+}
