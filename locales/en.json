@@ -21,7 +21,7 @@
 	"OSS": "Open Source",
 	"OSS_TEXT": "SMSSecure is Free and Open Source, enabling anyone to verify its security by auditing the code.",
 	"COMMUNITY": "Join the community!",
-	"COMMUNITY_TEXT": "Have a question? Want to help out? Join our IRC channel: %s#SMSSecure on Freenode%s.",
+	"COMMUNITY_TEXT": "Have a question? Want to help out? Join our IRC channel: %s#SMSSecure on Freenode%s or %sfollow @SMSSecure_ on Twitter%s.",
 	"GITHUB_BADGE_WATCH": "Watch",
 	"GITHUB_BADGE_WATCH_LABEL": "Watch SMSSecure on GitHub",
 	"GITHUB_BADGE_WATCH_COUNT_LABEL": "# watchers on GitHub",
