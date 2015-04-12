@@ -30,7 +30,7 @@ app.get('/', function (req, res) {
 			});
 		},
 		function(res, callback){
-			if (res.statusCode != 200) return callback(true);
+			if (res.statusCode != 200) return callback("Status code: "+res.statusCode);
 			return callback(null, JSON.parse(res.body));
 		}
 	], function(err, commits){
