@@ -89,7 +89,7 @@
 		<% if (commit !== null){ %>
 		<div class="content-block" id="git">
 			<div class="container text-center">
-				<p><%- res.__('LAST_COMMIT', '<a href="'+commit.link+'">'+commit.title+'</a>', '<a href="https://github.com/'+commit.author+'">'+commit.author+'</a>', commit.date) %></p>
+				<p><%- res.__('LAST_COMMIT', '<a href="'+commit.link+'">'+commit.message+'</a>', '<a href="https://github.com/'+commit.author+'">'+commit.author+'</a>', commit.date) %></p>
 			</div>
 		</div>
 		<% } %>

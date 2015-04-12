@@ -12,7 +12,7 @@ npm start
 To customize some parameters, use environment variables:
 
 ```
-GIT_RSS="https://github.com/SMSSecure/SMSSecure/commits.atom" TIMEOUT=2000 PORT=3000 npm start
+TIMEOUT=2000 PORT=3000 npm start
 ```
 
 ## Requirements

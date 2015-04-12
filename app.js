@@ -1,7 +1,6 @@
 var express = require('express'),
 	i18n = require('i18n'),
 	request = require('request'),
-	feed = require('fast-feed'),
 	async = require('async')
 	commit = null,
 	moment = require('moment');
@@ -26,22 +25,22 @@ app.get('/', function (req, res) {
 
 	async.waterfall([
 		function(callback){
-			request(process.env.GIT_RSS || 'https://github.com/SMSSecure/SMSSecure/commits.atom', {timeout: parseInt(process.env.TIMEOUT) || 2000}, function (err, res) {
+			request('https://api.github.com/repos/SMSSecure/SMSSecure/commits', {timeout: parseInt(process.env.TIMEOUT) || 2000, headers: {'User-Agent': 'SMSSecure Website'}}, function (err, res) {
 				return callback(err, res);
 			});
 		},
 		function(res, callback){
 			if (res.statusCode != 200) return callback(true);
-			feed.parse(res.body, function(err, feed) {
-				return callback(err, feed);
-			});
+			return callback(null, JSON.parse(res.body));
 		}
-	], function(err, feed){
+	], function(err, commits){
 		if (err) console.log(err);
 		if (!err){
-			commit = feed.items[0];
-			commit.title = commit.title.replace(/\n */g, '');
-			commit.date = moment(commit.date).fromNow();
+			commit = {};
+			commit.message = commits[1].commit.message.split('\n')[0];
+			commit.date = moment(commits[0].commit.author.date).fromNow();
+			commit.author = commits[0].author.login;
+			commit.link = 'https://github.com/SMSSecure/SMSSecure/commit/'+commits[0].sha;
 		}
 		return res.render('index', {req: req, res: res, commit: commit});
 	});

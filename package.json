@@ -22,7 +22,6 @@
     "bootstrap": "^3.3.4",
     "ejs": "^2.3.1",
     "express": "^4.12.3",
-    "fast-feed": "^1.0.12",
     "font-awesome": "^4.3.0",
     "i18n": "^0.5.0",
     "jquery": "^2.1.3",
