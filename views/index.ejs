@@ -19,6 +19,7 @@
 	<link rel="stylesheet" href="/css/font-awesome.css">
 	<link rel="stylesheet" href="/css/style.css" media="screen"/>
 	<link rel="stylesheet" href="/css/gh-fork-ribbon.css" media="screen"/>
+	<link rel="stylesheet" href="/css/github.css" media="screen"/>
 
 	<link rel="shortcut icon" href="/images/favicon.png">
 
@@ -148,18 +149,42 @@
 		</div>
 
 		<div class="content-block" id="footer">
-			<div class="container text-center">
-				<div class="col-md-3 col-xs-6">
-					<a aria-label="<%= res.__('GITHUB_BADGE_WATCH_LABEL') %>" data-count-aria-label="<%= res.__('GITHUB_BADGE_WATCH_COUNT_LABEL') %>" data-count-api="/repos/SMSSecure/SMSSecure#subscribers_count" data-count-href="/SMSSecure/SMSSecure/watchers" data-style="mega" data-icon="octicon-eye" href="https://github.com/SMSSecure/SMSSecure" class="github-button"><%= res.__('GITHUB_BADGE_WATCH') %></a>
+			<div class="container">
+				<div class="col-md-3 col-xs-6 github-social text-center">
+					<span class="github-btn github-btn-large">
+						<a class="gh-btn" href="https://github.com/SMSSecure/SMSSecure">
+							<span class="gh-ico text-center"><i class="fa fa-eye"></i></span>
+							<span class="gh-text"><%= res.__('GITHUB_BADGE_WATCH') %></span>
+						</a>
+						<a class="gh-count" href="https://github.com/SMSSecure/SMSSecure"><%= github.subscribers_count %></a>
+					</span>
 				</div>
-				<div class="col-md-3 col-xs-6">
-					<a aria-label="<%= res.__('GITHUB_BADGE_STAR_LABEL') %>" data-count-aria-label="<%= res.__('GITHUB_BADGE_STAR_COUNT_LABEL') %>" data-count-api="/repos/SMSSecure/SMSSecure#stargazers_count" data-count-href="/SMSSecure/SMSSecure/stargazers" data-style="mega" data-icon="octicon-star" href="https://github.com/SMSSecure/SMSSecure" class="github-button"><%= res.__('GITHUB_BADGE_STAR') %></a>
+				<div class="col-md-3 col-xs-6 github-social">
+					<span class="github-btn github-btn-large">
+						<a class="gh-btn" href="https://github.com/SMSSecure/SMSSecure">
+							<span class="gh-ico text-center"><i class="fa fa-star"></i></span>
+							<span class="gh-text"><%= res.__('GITHUB_BADGE_STAR') %></span>
+						</a>
+						<a class="gh-count" href="https://github.com/SMSSecure/SMSSecure"><%= github.stargazers_count %></a>
+					</span>
 				</div>
-				<div class="col-md-3 col-xs-6">
-					<a aria-label="<%= res.__('GITHUB_BADGE_FORK_LABEL') %>" data-count-aria-label="<%= res.__('GITHUB_BADGE_FORK_COUNT_LABEL') %>" data-count-api="/repos/SMSSecure/SMSSecure#forks_count" data-count-href="/SMSSecure/SMSSecure/network" data-style="mega" data-icon="octicon-git-branch" href="https://github.com/SMSSecure/SMSSecure/fork" class="github-button"><%= res.__('GITHUB_BADGE_FORK') %></a>
+				<div class="col-md-3 col-xs-6 github-social">
+					<span class="github-btn github-btn-large">
+						<a class="gh-btn" href="https://github.com/SMSSecure/SMSSecure/fork">
+							<span class="gh-ico text-center"><i class="fa fa-code-fork"></i></span>
+							<span class="gh-text"><%= res.__('GITHUB_BADGE_FORK') %></span>
+						</a>
+						<a class="gh-count" href="https://github.com/SMSSecure/SMSSecure/fork"><%= github.forks %></a>
+					</span>
 				</div>
-				<div class="col-md-3 col-xs-6">
-					<a aria-label="<%= res.__('GITHUB_BADGE_ISSUE_LABEL') %>" data-count-aria-label="<%= res.__('GITHUB_BADGE_ISSUE_COUNT_LABEL') %>" data-count-api="/repos/SMSSecure/SMSSecure#open_issues_count" data-style="mega" data-icon="octicon-issue-opened" href="https://github.com/SMSSecure/SMSSecure/issues" class="github-button"><%= res.__('GITHUB_BADGE_ISSUE') %></a>
+				<div class="col-md-3 col-xs-6 github-social">
+					<span class="github-btn github-btn-large">
+						<a class="gh-btn" href="https://github.com/SMSSecure/SMSSecure/issues">
+							<span class="gh-ico text-center"><i class="fa fa-exclamation"></i></span>
+							<span class="gh-text"><%= res.__('GITHUB_BADGE_ISSUE') %></span>
+						</a>
+						<a class="gh-count" href="https://github.com/SMSSecure/SMSSecure/issues"><%= github.open_issues %></a>
+					</span>
 				</div>
 			</div>
 		</div>
@@ -170,7 +195,6 @@
 	<script src="/js/jquery-actual.js"></script>
 	<script src="/js/jquery-scrollto.js"></script>
 	<script src="/js/script.js"></script>
-	<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
 
 </body>
 </html>

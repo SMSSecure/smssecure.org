@@ -3,7 +3,8 @@ var express = require('express'),
 	request = require('request'),
 	commit = null,
 	moment = require('moment'),
-	fs = require('fs');
+	fs = require('fs'),
+	async = require('async');
 
 var app = express();
 
@@ -19,31 +20,58 @@ app.use(i18n.init);
 app.use(express.static(__dirname + '/assets'));
 app.set('view engine', 'ejs');
 
-updateCache = function(callback){
-	request('https://api.github.com/repos/SMSSecure/SMSSecure/commits', {timeout: parseInt(process.env.TIMEOUT) || 2000, headers: {'User-Agent': 'SMSSecure Website'}}, function (err, res) {
-		if (err || typeof res == 'undefined' || typeof res.statusCode == 'undefined' || res.statusCode != 200) return callback(true);
-		fs.writeFile('./cache.json', res.body, function (err) {
-			if (err) return callback("Cannot write cache.json");
-			return callback(null, JSON.parse(res.body));
-		});
+updateCache = function(cb){
+	async.parallel({
+		details: function(callback){
+			request('https://api.github.com/repos/SMSSecure/SMSSecure', {timeout: parseInt(process.env.TIMEOUT) || 2000, headers: {'User-Agent': 'SMSSecure Website'}}, function (err, res) {
+				if (err || typeof res == 'undefined' || typeof res.statusCode == 'undefined' || res.statusCode != 200) return callback(true);
+				fs.writeFile('./cache-details.json', res.body, function (err) {
+					if (err) return callback("Cannot write cache-details.json");
+					return callback(null, JSON.parse(res.body));
+				});
+			});
+		},
+		commits: function(callback){
+			request('https://api.github.com/repos/SMSSecure/SMSSecure/commits', {timeout: parseInt(process.env.TIMEOUT) || 2000, headers: {'User-Agent': 'SMSSecure Website'}}, function (err, res) {
+				if (err || typeof res == 'undefined' || typeof res.statusCode == 'undefined' || res.statusCode != 200) return callback(true);
+				fs.writeFile('./cache-commits.json', res.body, function (err) {
+					if (err) return callback("Cannot write cache-commits.json");
+					return callback(null, JSON.parse(res.body));
+				});
+			});
+		}
+	}, function(err, json){
+		return cb(err, json);
 	});
 };
 
-getCache = function(callback){
-	fs.readFile('./cache.json', function (err, data) {
-		if (err) return callback(err);
-		return callback(null, JSON.parse(data));
-	});
+getCache = function(cb){
+	async.parallel({
+		commits: function(callback){
+			fs.readFile('./cache-commits.json', function (err, data) {
+				if (err) return callback(err);
+				return callback(null, JSON.parse(data));
+			});
+		},
+		details: function(callback){
+			fs.readFile('./cache-details.json', function (err, data) {
+				if (err) return callback(err);
+				return callback(null, JSON.parse(data));
+			});
+		}
+	}, function(err, json){
+		return cb(err, json);
+	})
 };
 
 getCacheTime = function(callback){
-	fs.stat('./cache.json', function(err, stats){
+	fs.stat('./cache-commits.json', function(err, stats){
 		if (err) return callback(err);
 		return callback(null, Math.floor((new Date().getTime()-stats.mtime.getTime())/1000/60));
 	});
 };
 
-getCommits = function(callback){
+getData = function(callback){
 	getCacheTime(function(err, time){
 		var cache = parseInt(process.env.CACHE) || 5;
 		if (err || time >= cache){
@@ -64,16 +92,16 @@ app.get('/', function (req, res) {
 
 	moment.locale(res.locale);
 
-	getCommits(function(err, json){
+	getData(function(err, json){
 		if (err) console.log(err);
 		if (!err){
 			commit = {};
-			commit.message = json[0].commit.message.split('\n')[0];
-			commit.date = moment(json[0].commit.author.date).fromNow();
-			commit.author = json[0].author.login;
-			commit.link = 'https://github.com/SMSSecure/SMSSecure/commit/'+json[0].sha;
+			commit.message = json.commits[0].commit.message.split('\n')[0];
+			commit.date = moment(json.commits[0].commit.author.date).fromNow();
+			commit.author = json.commits[0].author.login;
+			commit.link = 'https://github.com/SMSSecure/SMSSecure/commit/'+json.commits[0].sha;
 		}
-		return res.render('index', {req: req, res: res, commit: commit});
+		return res.render('index', {req: req, res: res, commit: commit, github: json.details});
 	});
 })
 

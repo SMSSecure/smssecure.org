@@ -1,6 +1,6 @@
 node_modules/*
 npm-debug.log
-cache.json
+cache*
 
 assets/css/bootstrap.css
 assets/css/font-awesome.css
