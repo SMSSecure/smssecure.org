@@ -21,7 +21,7 @@ app.set('view engine', 'ejs');
 
 updateCache = function(callback){
 	request('https://api.github.com/repos/SMSSecure/SMSSecure/commits', {timeout: parseInt(process.env.TIMEOUT) || 2000, headers: {'User-Agent': 'SMSSecure Website'}}, function (err, res) {
-		if (err || typeof res == 'undefined' || typeof res.statusCode == 'undefined' || res.statusCode != 200) return callback("Status code: "+res.statusCode);
+		if (err || typeof res == 'undefined' || typeof res.statusCode == 'undefined' || res.statusCode != 200) return callback(true);
 		fs.writeFile('./cache.json', res.body, function (err) {
 			if (err) return callback("Cannot write cache.json");
 			return callback(null, JSON.parse(res.body));
