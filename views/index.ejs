@@ -150,6 +150,7 @@
 
 		<div class="content-block" id="footer">
 			<div class="container">
+				<% if (typeof github != 'undefined'){ %>
 				<div class="col-md-3 col-xs-6 github-social text-center">
 					<span class="github-btn github-btn-large">
 						<a class="gh-btn" href="https://github.com/SMSSecure/SMSSecure">
@@ -186,6 +187,7 @@
 						<a class="gh-count" href="https://github.com/SMSSecure/SMSSecure/issues"><%= github.open_issues %></a>
 					</span>
 				</div>
+				<% } %>
 			</div>
 		</div>
 
