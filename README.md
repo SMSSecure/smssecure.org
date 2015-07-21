@@ -28,5 +28,5 @@ You may obtain a copy of the License in the LICENSE file, or at:
 http://www.gnu.org/licenses/agpl-3.0.txt
 
 Pictures are licensed under the CC BY 2.0:
-https://www.flickr.com/photos/richardfisher/14954966997/
+https://www.flickr.com/photos/bastienlq/19276132753/
 https://www.flickr.com/photos/39908901@N06/6909402464/
