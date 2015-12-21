@@ -19,6 +19,17 @@ TIMEOUT=2000 PORT=3000 npm start
 
 You need Node.js and npm.
 
+## Docker
+
+To run this app into a Docker container, build the image and run it:
+
+```
+docker build -t "smssecure.org:latest" .
+docker run --restart=always -d --publish 127.0.0.1:8080:80 smssecure.org:latest
+```
+
+Then, visit http://localhost:8080/.
+
 ## License
 
 Licensed under the GNU Affero General Public License Version 3 (or later); you may not use this work except in compliance with the License.
