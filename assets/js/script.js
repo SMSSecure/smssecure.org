@@ -33,7 +33,7 @@
 
 	function centerHomeBannerText() {
 		var bannerText = jQuery('#header > .center');
-		var bannerTextTop = (jQuery('#header').actual('height')/2) - (jQuery('#header > .center').actual('height')/2);
+		var bannerTextTop = (jQuery('#header').height()/2) - (jQuery('#header > .center').height()/2);
 		bannerText.css('padding-top', bannerTextTop+'px');
 		bannerText.show();
 	}
