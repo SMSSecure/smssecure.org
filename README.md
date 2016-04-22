@@ -1,4 +1,4 @@
-Website of the SMSSecure project.
+Website of the Silence project.
 
 ## Installation
 
@@ -24,8 +24,8 @@ You need Node.js and npm.
 To run this app into a Docker container, build the image and run it:
 
 ```
-docker build -t "smssecure.org:latest" .
-docker run --restart=always -d --publish 127.0.0.1:8080:80 smssecure.org:latest
+docker build -t "silence.im:latest" .
+docker run --restart=always -d --publish 127.0.0.1:8080:80 silence.im:latest
 ```
 
 Then, visit http://localhost:8080/.

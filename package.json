@@ -1,20 +1,20 @@
 {
-  "name": "smssecure.org",
+  "name": "silence.im",
   "private": true,
   "version": "1.0.0",
-  "description": "Website of the SMSSecure project",
+  "description": "Website of the Silence project",
   "scripts": {
     "start": "bash ./start.sh"
   },
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SMSSecure/smssecure.org.git"
+    "url": "https://github.com/SilenceIM/silence.im.git"
   },
   "author": "Bastien Le Querrec",
   "license": "AGPL-3.0",
   "engines": {
-    "node": "0.12.x"
+    "node": "4.x.x"
   },
   "dependencies": {
     "async": "^0.9.0",

@@ -9,10 +9,6 @@ if [[ ! -L "$PWD/assets/js/jquery-scrollto.js" ]]; then
 	ln -s "$PWD/node_modules/jquery.scrollto/jquery.scrollTo.min.js" "$PWD/assets/js/jquery-scrollto.js"
 fi
 
-if [[ ! -L "$PWD/assets/js/jquery-actual.js" ]]; then
-	ln -s "$PWD/node_modules/actual/jquery.actual.min.js" "$PWD/assets/js/jquery-actual.js"
-fi
-
 if [[ ! -L "$PWD/assets/js/bootstrap.js" ]]; then
 	ln -s "$PWD/node_modules/bootstrap/dist/js/bootstrap.min.js" "$PWD/assets/js/bootstrap.js"
 fi

@@ -23,7 +23,7 @@ app.set('view engine', 'ejs');
 updateCache = function(cb){
 	async.parallel({
 		details: function(callback){
-			request('https://api.github.com/repos/SMSSecure/SMSSecure', {timeout: parseInt(process.env.TIMEOUT) || 2000, headers: {'User-Agent': 'SMSSecure Website'}}, function (err, res) {
+			request('https://api.github.com/repos/SilenceIM/Silence', {timeout: parseInt(process.env.TIMEOUT) || 2000, headers: {'User-Agent': 'SMSSecure Website'}}, function (err, res) {
 				if (err || typeof res == 'undefined' || typeof res.statusCode == 'undefined' || res.statusCode != 200) return callback(true);
 				fs.writeFile('./cache-details.json', res.body, function (err) {
 					if (err) return callback("Cannot write cache-details.json");
@@ -32,7 +32,7 @@ updateCache = function(cb){
 			});
 		},
 		commits: function(callback){
-			request('https://api.github.com/repos/SMSSecure/SMSSecure/commits', {timeout: parseInt(process.env.TIMEOUT) || 2000, headers: {'User-Agent': 'SMSSecure Website'}}, function (err, res) {
+			request('https://api.github.com/repos/SilenceIM/Silence/commits', {timeout: parseInt(process.env.TIMEOUT) || 2000, headers: {'User-Agent': 'SMSSecure Website'}}, function (err, res) {
 				if (err || typeof res == 'undefined' || typeof res.statusCode == 'undefined' || res.statusCode != 200) return callback(true);
 				fs.writeFile('./cache-commits.json', res.body, function (err) {
 					if (err) return callback("Cannot write cache-commits.json");
@@ -99,7 +99,7 @@ app.get('/', function (req, res) {
 			commit.message = json.commits[0].commit.message.split('\n')[0];
 			commit.date = moment(json.commits[0].commit.author.date).fromNow();
 			commit.author = json.commits[0].author.login;
-			commit.link = 'https://github.com/SMSSecure/SMSSecure/commit/'+json.commits[0].sha;
+			commit.link = 'https://github.com/SilenceIM/Silence/commit/'+json.commits[0].sha;
 		}
 		return res.render('index', {req: req, res: res, commit: commit, github: json.details});
 	});

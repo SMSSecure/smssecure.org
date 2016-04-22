@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="<%= res.__('LANG') %>" prefix="og: http://ogp.me/ns#">
 <head>
-	<title>SMSSecure | <%= res.__('SLOGAN') %></title>
+	<title>Silence | <%= res.__('SLOGAN') %></title>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
@@ -9,8 +9,8 @@
 	<meta name="description" content="<%= res.__('DESCRIPTION') %>" />
 	<link rel="canonical" href="http://<%= req.headers.host %><%= req.url %>" />
 	<link rel="shortlink" href="http://<%= req.headers.host %><%= req.url %>" />
-	<meta property="og:site_name" content="<%= res.__('SMSSecure') %>" />
-	<meta property="og:title" content="<%= res.__('SMSSecure') %>" />
+	<meta property="og:site_name" content="<%= res.__('Silence') %>" />
+	<meta property="og:title" content="<%= res.__('Silence') %>" />
 	<meta property="og:description" content="<%= res.__('SLOGAN') %>" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://<%= req.headers.host %><%= req.url %>" />
@@ -30,7 +30,7 @@
 <body>
 	<div class="github-fork-ribbon-wrapper right">
 		<div class="github-fork-ribbon">
-			<a href="https://github.com/SMSSecure/SMSSecure"><%= res.__('FORK_US') %></a>
+			<a href="https://github.com/SilenceIM/Silence"><%= res.__('FORK_US') %></a>
 		</div>
 	</div>
 	<div id="wrapper">
@@ -38,7 +38,7 @@
 		<div id="header" class="content-block">
 			<div class="top clearfix">
 				<div class="pull-left">
-					<h1><a class="scrollTo" href="#wrapper"><img class="logo" src="/images/logo-header.png" alt="SMSSecure" height="60" width="225"><img class="logo-mobile" src="/images/logo-mobile.png" alt="SMSSecure" height="30" width="120"></a></h1>
+					<h1><a class="scrollTo" href="#wrapper"><img class="logo" src="/images/logo-header.png" alt="Silence" height="60" width="225"><img class="logo-mobile" src="/images/logo-mobile.png" alt="Silence" height="30" width="120"></a></h1>
 				</div>
 			</div>
 			<div class="center">
@@ -77,7 +77,7 @@
 						<div class="col-md-6">
 							<h2><%= res.__('GET_SOURCE_CODE') %></h2>
 							<p><%= res.__('SOURCE_CODE_TEXT') %></p>
-							<p><a href="https://github.com/SMSSecure/SMSSecure" class="btn btn-o btn-lg"><%= res.__('GITHUB') %></a></p>
+							<p><a href="https://github.com/SilenceIM/Silence" class="btn btn-o btn-lg"><%= res.__('GITHUB') %></a></p>
 							<div class="text-center">
 								<i class="fa fa-github"></i>
 							</div>
@@ -144,7 +144,7 @@
 		<div class="content-block" id="irc">
 			<div class="container">
 				<h2><%= res.__('COMMUNITY') %></h2>
-				<p><%- res.__('COMMUNITY_TEXT', '<a href="https://webchat.freenode.net/?channels=SMSSecure">', '</a>', '<a href="https://twitter.com/SMSSecure_">', '</a>') %></p>
+				<p><%- res.__('COMMUNITY_TEXT', '<a href="https://webchat.freenode.net/?channels=Silence">', '</a>', '<a href="https://twitter.com/SilenceIM">', '</a>') %></p>
 			</div>
 		</div>
 
@@ -153,38 +153,38 @@
 				<% if (typeof github != 'undefined'){ %>
 				<div class="col-md-3 col-xs-6 github-social text-center">
 					<span class="github-btn github-btn-large">
-						<a class="gh-btn" href="https://github.com/SMSSecure/SMSSecure">
+						<a class="gh-btn" href="https://github.com/SilenceIM/Silence">
 							<span class="gh-ico text-center"><i class="fa fa-eye"></i></span>
 							<span class="gh-text"><%= res.__('GITHUB_BADGE_WATCH') %></span>
 						</a>
-						<a class="gh-count" href="https://github.com/SMSSecure/SMSSecure"><%= github.subscribers_count %></a>
+						<a class="gh-count" href="https://github.com/SilenceIM/Silence"><%= github.subscribers_count %></a>
 					</span>
 				</div>
 				<div class="col-md-3 col-xs-6 github-social">
 					<span class="github-btn github-btn-large">
-						<a class="gh-btn" href="https://github.com/SMSSecure/SMSSecure">
+						<a class="gh-btn" href="https://github.com/SilenceIM/Silence">
 							<span class="gh-ico text-center"><i class="fa fa-star"></i></span>
 							<span class="gh-text"><%= res.__('GITHUB_BADGE_STAR') %></span>
 						</a>
-						<a class="gh-count" href="https://github.com/SMSSecure/SMSSecure"><%= github.stargazers_count %></a>
+						<a class="gh-count" href="https://github.com/SilenceIM/Silence"><%= github.stargazers_count %></a>
 					</span>
 				</div>
 				<div class="col-md-3 col-xs-6 github-social">
 					<span class="github-btn github-btn-large">
-						<a class="gh-btn" href="https://github.com/SMSSecure/SMSSecure/fork">
+						<a class="gh-btn" href="https://github.com/SilenceIM/Silence/fork">
 							<span class="gh-ico text-center"><i class="fa fa-code-fork"></i></span>
 							<span class="gh-text"><%= res.__('GITHUB_BADGE_FORK') %></span>
 						</a>
-						<a class="gh-count" href="https://github.com/SMSSecure/SMSSecure/fork"><%= github.forks %></a>
+						<a class="gh-count" href="https://github.com/SilenceIM/Silence/fork"><%= github.forks %></a>
 					</span>
 				</div>
 				<div class="col-md-3 col-xs-6 github-social">
 					<span class="github-btn github-btn-large">
-						<a class="gh-btn" href="https://github.com/SMSSecure/SMSSecure/issues">
+						<a class="gh-btn" href="https://github.com/SilenceIM/Silence/issues">
 							<span class="gh-ico text-center"><i class="fa fa-exclamation"></i></span>
 							<span class="gh-text"><%= res.__('GITHUB_BADGE_ISSUE') %></span>
 						</a>
-						<a class="gh-count" href="https://github.com/SMSSecure/SMSSecure/issues"><%= github.open_issues %></a>
+						<a class="gh-count" href="https://github.com/SilenceIM/Silence/issues"><%= github.open_issues %></a>
 					</span>
 				</div>
 				<% } %>
