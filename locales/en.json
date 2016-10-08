@@ -15,7 +15,7 @@
 	"RELIABLE": "Reliable",
 	"RELIABLE_TEXT": "Silence communicates using encrypted SMS messages. No servers or internet connection required.",
 	"PRIVATE": "Private",
-	"PRIVATE_TEXT": "Silence provides end-to-end encryption for your messages using the painstakingly engineered Axolotl encryption protocol.",
+	"PRIVATE_TEXT": "Silence provides end-to-end encryption for your messages using the painstakingly engineered Signal encryption protocol.",
 	"SAFE": "Safe",
 	"SAFE_TEXT": "All messages are encrypted locally, so if your phone is lost or stolen, your messages are protected.",
 	"OSS": "Open Source",
