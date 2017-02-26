@@ -83,4 +83,12 @@
 		return false;
 	});
 
+	jQuery.getJSON("/location").done(function(data) {
+		var country = (data != null && data.country != null) ? data.country : "unknown";
+		if (country == "US") {
+			jQuery('#non-us').hide();
+			jQuery('#us').show();
+		}
+	});
+
 })();

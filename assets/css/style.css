@@ -247,3 +247,29 @@ h1, h2, h3, h4, h5, h6 {
 #footer h3{
 	color: white;
 }
+
+/* Modal */
+.vertical-alignment-helper {
+  display:table;
+  height: 100%;
+  width: 100%;
+  pointer-events:none;
+}
+.vertical-align-center {
+  display: table-cell;
+  vertical-align: middle;
+  pointer-events:none;
+}
+.modal-content {
+  width:inherit;
+  height:inherit;
+  margin: 0 auto;
+  pointer-events: all;
+}
+.modal-body {
+	text-align: justify;
+}
+
+#us {
+	display: none;
+}

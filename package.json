@@ -14,18 +14,19 @@
   "author": "Bastien Le Querrec",
   "license": "AGPL-3.0",
   "engines": {
-    "node": "4.x.x"
+    "node": "7.x.x"
   },
   "dependencies": {
-    "async": "^0.9.0",
-    "bootstrap": "^3.3.4",
-    "ejs": "^2.3.1",
-    "express": "^4.12.3",
-    "font-awesome": "^4.3.0",
-    "i18n": "^0.5.0",
-    "jquery": "^2.1.4",
-    "jquery.scrollto": "^2.1.0",
-    "moment": "^2.10.2",
-    "request": "^2.55.0"
+    "async": "^2.1.5",
+    "bootstrap": "^3.3.7",
+    "ejs": "^2.5.6",
+    "express": "^4.14.1",
+    "font-awesome": "^4.7.0",
+    "geoip-lite": "^1.1.9",
+    "i18n": "^0.8.3",
+    "jquery": "^3.1.1",
+    "jquery.scrollto": "^2.1.2",
+    "moment": "^2.17.1",
+    "request": "^2.79.0"
   }
 }

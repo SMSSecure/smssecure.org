@@ -103,7 +103,15 @@ app.get('/', function (req, res) {
 		}
 		return res.render('index', {req: req, res: res, commit: commit, github: json.details});
 	});
-})
+});
+
+app.get('/location', function(req, res) {
+	var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+	console.log(ip);
+	var location = require('geoip-lite').lookup(ip);
+	var country = (location != null) ? location.country : "unknown";
+	return res.json({"country": country});
+});
 
 var server = app.listen(parseInt(process.env.PORT) || 3000, function () {
 	console.log('App listening at http://%s:%s', server.address().address, server.address().port);
