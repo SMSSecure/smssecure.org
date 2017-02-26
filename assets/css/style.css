@@ -204,6 +204,9 @@ h1, h2, h3, h4, h5, h6 {
 .fa-github, .fa-android {
 	font-size: 192px;
 }
+.fa-comments-o, .fa-btc {
+	font-size: 100px;
+}
 #git {
 	padding-top: 25px;
 	padding-bottom: 5px;

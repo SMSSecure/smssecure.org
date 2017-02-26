@@ -149,8 +149,29 @@
 
 		<div class="content-block" id="irc">
 			<div class="container">
-				<h2><%= res.__('COMMUNITY') %></h2>
-				<p><%- res.__('COMMUNITY_TEXT', '<a href="https://webchat.freenode.net/?channels=Silence">', '</a>', '<a href="https://twitter.com/SilenceIM">', '</a>') %></p>
+				<div class="row">
+					<div class="col-md-2 text-center">
+						<i class="fa fa-comments-o" aria-hidden="true"></i>
+					</div>
+					<div class="col-md-10">
+						<h2><%= res.__('COMMUNITY') %></h2>
+						<p><%- res.__('COMMUNITY_TEXT', '<a href="https://webchat.freenode.net/?channels=Silence">', '</a>', '<a href="https://twitter.com/SilenceIM">', '</a>') %></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content-block" id="bitcoin">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2 col-md-push-10 text-center">
+						<i class="fa fa-btc" aria-hidden="true"></i>
+					</div>
+					<div class="col-md-10 col-md-pull-2">
+						<h2><%= res.__('SUPPORT_TITLE') %></h2>
+						<p><%= res.__('SUPPORT_TEXT') %></p>
+						<p><%- res.__('SUPPORT_TEXT_ADDRESS', '<code>1LoKZXg3bx6kfwAhEFQqS9pgeCE1CFMEJb</code>') %></p>
+					</div>
+				</div>
 			</div>
 		</div>
 
