@@ -9,7 +9,19 @@ var express = require('express'),
 var app = express();
 
 i18n.configure({
-	locales:['en'],
+	locales:[
+		'en',
+		'bg',
+		'eo',
+		'es',
+		'fr',
+		'ja',
+		'nb',
+		'nl',
+		'pl',
+		'pt',
+		'sr'
+	],
 	defaultLocale: 'en',
 	directory: __dirname + '/locales',
 	updateFiles: false
