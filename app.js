@@ -125,6 +125,10 @@ app.get('/location', function(req, res) {
 	return res.json({"country": country});
 });
 
+app.get('/beta', function(req, res) {
+	return res.redirect('https://play.google.com/apps/testing/org.smssecure.smssecure');
+});
+
 var server = app.listen(parseInt(process.env.PORT) || 3000, function () {
 	console.log('App listening at http://%s:%s', server.address().address, server.address().port);
 })
