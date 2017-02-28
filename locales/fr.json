@@ -34,7 +34,7 @@
     "GITHUB_BADGE_ISSUE": "Tickets",
     "GITHUB_BADGE_ISSUE_LABEL": "Tickets de Silence sur GitHub",
     "GITHUB_BADGE_ISSUE_COUNT_LABEL": "# tickets sur GitHub",
-    "BETA_DESCRIPTION": "Si vous voulez faire partie du programme beta, envoyez-nous votre adresse Google utilisée pour télécharger Silence à %s et nous vous ajouterons. Les utilisateurs de F-Droid n'ont besoin que de cocher « Mises à jour instables » dans le client F-Droid.",
+    "BETA_DESCRIPTION": "If you want to be part of our beta program, please visit the %sPlay Store subscription form%s. F-Droid users do not need to do anything but enabling “Unstable updates” in the F-Droid client.",
     "WARNING": "Attention",
     "US_WARNING_MODAL": "Vous des raisons de droit des marques, Silence n'est actuellement pas disponible sur le Play Store aux États-Unis, mais vous pouvez toujours %stélécharger Silence aux États-Unis depuis F-Droid%s, un dépôt d'applications libres, open-souce et gratuites (FOSS) pour Android supporté par la Free Software Foundation (FSF).",
     "US_WARNING_MODAL_CONTINUE": "Continuer vers le Play Store",
