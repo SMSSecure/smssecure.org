@@ -119,7 +119,6 @@ app.get('/', function (req, res) {
 
 app.get('/location', function(req, res) {
 	var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
-	console.log(ip);
 	var location = require('geoip-lite').lookup(ip);
 	var country = (location != null) ? location.country : "unknown";
 	return res.json({"country": country});
