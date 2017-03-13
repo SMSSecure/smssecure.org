@@ -175,49 +175,69 @@
 			</div>
 		</div>
 
-		<div class="content-block" id="footer">
+		<div class="content-block" id="privacy">
 			<div class="container">
-				<% if (typeof github != 'undefined'){ %>
-				<div class="col-md-3 col-xs-6 github-social text-center">
-					<span class="github-btn github-btn-large">
-						<a class="gh-btn" href="https://github.com/SilenceIM/Silence">
-							<span class="gh-ico text-center"><i class="fa fa-eye"></i></span>
-							<span class="gh-text"><%= res.__('GITHUB_BADGE_WATCH') %></span>
-						</a>
-						<a class="gh-count" href="https://github.com/SilenceIM/Silence"><%= github.subscribers_count %></a>
-					</span>
+				<div class="row">
+					<div class="col-md-2 text-center">
+						<i class="fa fa-user-secret" aria-hidden="true"></i>
+					</div>
+					<div class="col-md-10">
+						<h2><%= res.__('PRIVACY_POLICY') %></h2>
+						<p><%- res.__('PRIVACY_POLICY_TEXT', '<ul><li><code>', '</code>', '</li><li><code>', '</code>', '</li><li><code>', '</code>') %></li></ul></p>
+					</div>
 				</div>
-				<div class="col-md-3 col-xs-6 github-social">
-					<span class="github-btn github-btn-large">
-						<a class="gh-btn" href="https://github.com/SilenceIM/Silence">
-							<span class="gh-ico text-center"><i class="fa fa-star"></i></span>
-							<span class="gh-text"><%= res.__('GITHUB_BADGE_STAR') %></span>
-						</a>
-						<a class="gh-count" href="https://github.com/SilenceIM/Silence"><%= github.stargazers_count %></a>
-					</span>
-				</div>
-				<div class="col-md-3 col-xs-6 github-social">
-					<span class="github-btn github-btn-large">
-						<a class="gh-btn" href="https://github.com/SilenceIM/Silence/fork">
-							<span class="gh-ico text-center"><i class="fa fa-code-fork"></i></span>
-							<span class="gh-text"><%= res.__('GITHUB_BADGE_FORK') %></span>
-						</a>
-						<a class="gh-count" href="https://github.com/SilenceIM/Silence/fork"><%= github.forks %></a>
-					</span>
-				</div>
-				<div class="col-md-3 col-xs-6 github-social">
-					<span class="github-btn github-btn-large">
-						<a class="gh-btn" href="https://github.com/SilenceIM/Silence/issues">
-							<span class="gh-ico text-center"><i class="fa fa-exclamation"></i></span>
-							<span class="gh-text"><%= res.__('GITHUB_BADGE_ISSUE') %></span>
-						</a>
-						<a class="gh-count" href="https://github.com/SilenceIM/Silence/issues"><%= github.open_issues %></a>
-					</span>
-				</div>
-				<% } %>
 			</div>
 		</div>
 
+		<div class="content-block" id="footer">
+			<div class="container">
+				<% if (typeof github != 'undefined'){ %>
+				<div class="row">
+					<div class="col-md-3 col-xs-6 github-social text-center">
+						<span class="github-btn github-btn-large">
+							<a class="gh-btn" href="https://github.com/SilenceIM/Silence">
+								<span class="gh-ico text-center"><i class="fa fa-eye"></i></span>
+								<span class="gh-text"><%= res.__('GITHUB_BADGE_WATCH') %></span>
+							</a>
+							<a class="gh-count" href="https://github.com/SilenceIM/Silence"><%= github.subscribers_count %></a>
+						</span>
+					</div>
+					<div class="col-md-3 col-xs-6 github-social">
+						<span class="github-btn github-btn-large">
+							<a class="gh-btn" href="https://github.com/SilenceIM/Silence">
+								<span class="gh-ico text-center"><i class="fa fa-star"></i></span>
+								<span class="gh-text"><%= res.__('GITHUB_BADGE_STAR') %></span>
+							</a>
+							<a class="gh-count" href="https://github.com/SilenceIM/Silence"><%= github.stargazers_count %></a>
+						</span>
+					</div>
+					<div class="col-md-3 col-xs-6 github-social">
+						<span class="github-btn github-btn-large">
+							<a class="gh-btn" href="https://github.com/SilenceIM/Silence/fork">
+								<span class="gh-ico text-center"><i class="fa fa-code-fork"></i></span>
+								<span class="gh-text"><%= res.__('GITHUB_BADGE_FORK') %></span>
+							</a>
+							<a class="gh-count" href="https://github.com/SilenceIM/Silence/fork"><%= github.forks %></a>
+						</span>
+					</div>
+					<div class="col-md-3 col-xs-6 github-social">
+						<span class="github-btn github-btn-large">
+							<a class="gh-btn" href="https://github.com/SilenceIM/Silence/issues">
+								<span class="gh-ico text-center"><i class="fa fa-exclamation"></i></span>
+								<span class="gh-text"><%= res.__('GITHUB_BADGE_ISSUE') %></span>
+							</a>
+							<a class="gh-count" href="https://github.com/SilenceIM/Silence/issues"><%= github.open_issues %></a>
+						</span>
+					</div>
+				</div>
+				<% } %>
+				<div class="row footer-text-container">
+					<div class="col-md-12">
+						<p class="small footer-text"><a href="#privacy"><%= res.__('PRIVACY_POLICY') %></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<!-- Warning modal for US users -->
@@ -234,6 +254,23 @@
 		      </div>
 		    </div>
 		  </div>
+		</div>
+	</div>
+
+	<!-- Privacy policy modal -->
+	<div class="modal fade" id="privacyModal" tabindex="-1" role="dialog" aria-labelledby="privacyModalLabel">
+		<div class="vertical-alignment-helper">
+			<div class="modal-dialog vertical-align-center" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h2 class="modal-title"><%= res.__('PRIVACY_POLICY') %></h2>
+					</div>
+					<div class="modal-body">
+						<p><%- res.__('PRIVACY_POLICY_TEXT', '<ul><li><code>', '</code>', '</li><li><code>', '</code>', '</li><li><code>', '</code>') %></li></ul></p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 

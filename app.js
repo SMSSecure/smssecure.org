@@ -128,6 +128,10 @@ app.get('/beta', function(req, res) {
 	return res.redirect('https://play.google.com/apps/testing/org.smssecure.smssecure');
 });
 
+app.get('/privacy', function(req, res) {
+	return res.redirect('/#privacy');
+});
+
 var server = app.listen(parseInt(process.env.PORT) || 3000, function () {
 	console.log('App listening at http://%s:%s', server.address().address, server.address().port);
 })

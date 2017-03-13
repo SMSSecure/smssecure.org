@@ -91,4 +91,15 @@
 		}
 	});
 
+	displayPrivacyPolicy = function () {
+		jQuery("#privacy").hide();
+		if (window.location.hash && window.location.hash.substring(1) === "privacy") {
+			console.log("Displaying privacy policy modal...");
+			jQuery('#privacyModal').modal('show');
+		}
+	}
+
+	displayPrivacyPolicy();
+	window.onhashchange = displayPrivacyPolicy;
+
 })();
