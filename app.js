@@ -15,11 +15,13 @@ i18n.configure({
 		'eo',
 		'es',
 		'fr',
+		'it',
 		'ja',
 		'nb',
 		'nl',
 		'pl',
 		'pt',
+		'ro',
 		'sr'
 	],
 	defaultLocale: 'en',
