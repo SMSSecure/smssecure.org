@@ -12,6 +12,7 @@ i18n.configure({
 	locales:[
 		'en',
 		'bg',
+		'de',
 		'eo',
 		'es',
 		'fr',

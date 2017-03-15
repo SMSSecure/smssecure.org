@@ -34,13 +34,13 @@
     "GITHUB_BADGE_ISSUE": "Issues",
     "GITHUB_BADGE_ISSUE_LABEL": "Issue Silence op GitHub",
     "GITHUB_BADGE_ISSUE_COUNT_LABEL": "# issues op GitHub",
-    "BETA_DESCRIPTION": "If you want to be part of our beta program, please visit the %sPlay Store subscription form%s. F-Droid users do not need to do anything but enabling “Unstable updates” in the F-Droid client.",
+    "BETA_DESCRIPTION": "Gebruik het %sPlay Store subscription form%s als je deel wilt nemen aan ons beta programma. F-Droid gebruikers kunnen volstaan met het aanvinken van de optie \"Onstabiele updates\" in de F-Droid client.",
     "WARNING": "Waarschuwing",
-    "US_WARNING_MODAL": "For trademark reasons, Silence is currently not available on Play Store in the U.S., but you can still %sdownload Silence in the U.S. from F-Droid%s, a repository of Free and Open Source (FOSS) apps on the Android platform supported by the Free Software Foundation (FSF).",
+    "US_WARNING_MODAL": "Vanwege issues met het handelsrecht is Silence momenteel niet beschikbaar in de Amerikaanse versie van de Play Store, maar je kunt Silence vanuit de USA nog steeds downloaden van F-Droid%s, een verzameling van gratis en open-source (FOSS) apps op het Android platform die ondersteund wordt door de Free Software Foundation (FSF).",
     "US_WARNING_MODAL_CONTINUE": "Ga verder naar de Play Store",
     "SUPPORT_TITLE": "Steun Silence!",
     "SUPPORT_TEXT": "Silence draait op donaties en we accepteren bitcoins. Dit helpt ons om verschillende kosten (web hosting, domeinnaam registratie) etc. te betalen.",
     "SUPPORT_TEXT_ADDRESS": "Ons Bitcoin adres is %s",
-    "PRIVACY_POLICY": "Privacy policy",
-    "PRIVACY_POLICY_TEXT": "Silence does not collect or transmit any personal information. We require the following permissions: %sINTERNET%s: This permission is required so the app can transfer data to/from cell service providers to enable MMS. It it not used for any other purpose. %sREAD_CONTACTS%s: This permission is required so the app can suggest contacts to the user as they type, as well as display contact information next to message threads. This information is never transmitted off the device. %sREAD_PHONE_STATE%s: This permission is required to get the current phone number. This is used for some dual-sim functionality and to ensure sending messages to the current number, from the current number, is handled correctly. This information is never transmitted off the device."
+    "PRIVACY_POLICY": "Privacy beleid",
+    "PRIVACY_POLICY_TEXT": "Silence verzamelt of verzend geen persoonlijke gegevens. We hebben de volgende permissies nodig: %sINTERNET%s: deze permissie is nodig om MMS berichten te ontvangen en verzenden. Het wordt nergens anders voor gebruikt. %sREAD_CONTACTS%s: deze permissie is nodig om contactpersonen te tonen aan de gebruiker tijdens het typen van een naam, en om contactgegevens te tonen bij de gesprekken. Deze gegevens worden nooit verstuurd naar buiten het toestel. %sREAD_PHONE_STATE%s: deze permissie wordt gebruikt om het huidige telefoonnummer op te vragen. Dit wordt gebruikt voor bepaalde dual-sim functionaliteit en om er voor te zorgen dat berichten van en naar het juiste telefoon nummer gestuurd worden. Deze gegevens worden nooit verstuurd naar buiten het toestel."
 }
