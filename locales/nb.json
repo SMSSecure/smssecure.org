@@ -34,13 +34,13 @@
     "GITHUB_BADGE_ISSUE": "Problemer",
     "GITHUB_BADGE_ISSUE_LABEL": "Ta opp problem med Silence på GitHub",
     "GITHUB_BADGE_ISSUE_COUNT_LABEL": "# problemer på GitHub",
-    "BETA_DESCRIPTION": "If you want to be part of our beta program, please visit the %sPlay Store subscription form%s. F-Droid users do not need to do anything but enabling “Unstable updates” in the F-Droid client.",
-    "WARNING": "Warning",
-    "US_WARNING_MODAL": "For trademark reasons, Silence is currently not available on Play Store in the U.S., but you can still %sdownload Silence in the U.S. from F-Droid%s, a repository of Free and Open Source (FOSS) apps on the Android platform supported by the Free Software Foundation (FSF).",
-    "US_WARNING_MODAL_CONTINUE": "Continue to Play Store",
-    "SUPPORT_TITLE": "Support Silence!",
-    "SUPPORT_TEXT": "Silence is powered by your donations and we accept bitcoins. This will help us to pay various costs (web hosting, domain name, etc.).",
-    "SUPPORT_TEXT_ADDRESS": "Our Bitcoin address is %s",
-    "PRIVACY_POLICY": "Privacy policy",
-    "PRIVACY_POLICY_TEXT": "Silence does not collect or transmit any personal information. We require the following permissions: %sINTERNET%s: This permission is required so the app can transfer data to/from cell service providers to enable MMS. It it not used for any other purpose. %sREAD_CONTACTS%s: This permission is required so the app can suggest contacts to the user as they type, as well as display contact information next to message threads. This information is never transmitted off the device. %sREAD_PHONE_STATE%s: This permission is required to get the current phone number. This is used for some dual-sim functionality and to ensure sending messages to the current number, from the current number, is handled correctly. This information is never transmitted off the device."
+    "BETA_DESCRIPTION": "Hvis du vil ta del i vårt beta-program, besøk %sPlay Store subscription form%s. F-droid -brukere trenger ikke å gjøre annet enn å skru på \"Ustabile oppdateringer\" i F-droid -klienten.",
+    "WARNING": "Advarsel",
+    "US_WARNING_MODAL": "Av varemerkehensyn er Silence foreløpig ikke tilgjengelig på Play-butikken i USA. Du kan dog %sdownload Silence i USA fra F-droid%s, en pakkebrønn med fri programvare for Android, støttet av Free Software Foundation (FSF).",
+    "US_WARNING_MODAL_CONTINUE": "Fortsett til Play-butikken",
+    "SUPPORT_TITLE": "Støtt Silence!",
+    "SUPPORT_TEXT": "Silence avhenger av kronerulling, og vi godtar Bitcoins. Dette hjelper oss å betale diverse kostnader (nettsidetjening, domenenavn, osv.)",
+    "SUPPORT_TEXT_ADDRESS": "Vår Bitcoin-adresse er %s",
+    "PRIVACY_POLICY": "Personvernspraksis",
+    "PRIVACY_POLICY_TEXT": "Silence samler ikke inn eller sender noen personlig informasjon. Følngende tilganger kreves: %sINTERNET%s: For å skrive data fra/til mobiltilbydere for å få MMS. Det brukes ikke til noe annet.%sREAD_CONTACTS%s Kontaktforslag mens du skriver, sågar også kontaktinformasjon ved siden av meldingstråder. Denne informasjonen sendes aldri fra enheten. %sREAD_PHONE_STATE%s: For å innhente gjeldende telefonnummer. Brukes for noen to-SIM-funksjonalitet, og for å forsikre at meldingsforsendelse til gjeldende nummer, fra gjeldende nummer, hånderes rett. Denne informasjonen blir aldri sendt fra enheten."
 }
