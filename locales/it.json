@@ -15,7 +15,7 @@
     "RELIABLE": "Affidabile",
     "RELIABLE_TEXT": "Silence comunica utilizzando messaggi SMS criptati. Non sono necessari server o connessioni a internet.",
     "PRIVATE": "Privato",
-    "PRIVATE_TEXT": "Silence fornisce una cifratura end-to-end per i tuoi messaggi usando il protocollo Axolotl, meticolosamente progettato.",
+    "PRIVATE_TEXT": "Silence fornisce una cifratura end-to-end per i tuoi messaggi usando il protocollo di Signal, meticolosamente progettato.",
     "SAFE": "Sicuro",
     "SAFE_TEXT": "Tutti i messaggi sono criptati in locale, perciò se il tuo telefono viene perduto o rubato, i tuoi messaggi rimangono protetti.",
     "OSS": "Open Source",

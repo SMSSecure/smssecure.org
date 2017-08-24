@@ -15,7 +15,7 @@
     "RELIABLE": "Fiável",
     "RELIABLE_TEXT": "As comunicações do Silence são efetuadas através de mensagens cifradas. Não é necessária qualquer ligação a servidores ou à Internet.",
     "PRIVATE": "Privada",
-    "PRIVATE_TEXT": "O Silence cifra as suas mensagens através do protocolo de cifra Axoloti.",
+    "PRIVATE_TEXT": " O Silence cifra as suas mensagens através do protocolo de cifra Signal.",
     "SAFE": "Segura",
     "SAFE_TEXT": "Todas as mensagens são cifradas localmente e se você perder o seu telefone, as mensagens estarão protegidas.",
     "OSS": "Open Source",

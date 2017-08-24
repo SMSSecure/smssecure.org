@@ -15,7 +15,7 @@
     "RELIABLE": "Niezawodność",
     "RELIABLE_TEXT": "Silence komunikuje się przez szyfrowane wiadomości SMS. Nie są wymagane żadne serwery, ani połączenie z Internetem.",
     "PRIVATE": "Prywatność",
-    "PRIVATE_TEXT": "Silence oferuje pełne (ang. end-to-end) szyfrowanie Twoich wiadomości używając starannie opracowanego protokołu szyfrującego Axolotl.",
+    "PRIVATE_TEXT": "Silence oferuje pełne (ang. end-to-end) szyfrowanie Twoich wiadomości używając starannie opracowanego protokołu szyfrującego Signal.",
     "SAFE": "Bezpieczeństwo",
     "SAFE_TEXT": "Wszystkie wiadomości są szyfrowane lokalnie, więc jeżeli Twój telefon zaginie lub zostanie skradziony Twoje wiadomości pozostaną bezpieczne.",
     "OSS": "Open Source",

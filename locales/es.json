@@ -15,7 +15,7 @@
     "RELIABLE": "Fiable",
     "RELIABLE_TEXT": "Silence comunica usando mensajes SMS cifrados: No se requieren servidores ni conexión a Internet.",
     "PRIVATE": "Privado",
-    "PRIVATE_TEXT": "Silence proporciona cifrado extremo-a-extremo para sus mensajes usando el concienzudamente diseñado protocolo de cifrado Axolotl.",
+    "PRIVATE_TEXT": "Silence proporciona cifrado extremo-a-extremo para sus mensajes usando el concienzudamente diseñado protocolo de cifrado Signal.",
     "SAFE": "Seguro",
     "SAFE_TEXT": "Todos los mensajes se cifran localmente, así que si pierde su teléfono o se lo roban, sus mensajes estarán protegidos.",
     "OSS": "Codigo abierto",
@@ -41,6 +41,6 @@
     "SUPPORT_TITLE": "¡Apoye Silence!",
     "SUPPORT_TEXT": "Silence está impulsado por sus donaciones, y aceptamos bitcoins. Esto nos ayudará a pagar varios costes (alojamiento web, nombre de dominio, etc.).",
     "SUPPORT_TEXT_ADDRESS": "Nuestra dirección de Bitcoin es %s",
-    "PRIVACY_POLICY": "Privacy policy",
-    "PRIVACY_POLICY_TEXT": "Silence does not collect or transmit any personal information. We require the following permissions: %sINTERNET%s: This permission is required so the app can transfer data to/from cell service providers to enable MMS. It it not used for any other purpose. %sREAD_CONTACTS%s: This permission is required so the app can suggest contacts to the user as they type, as well as display contact information next to message threads. This information is never transmitted off the device. %sREAD_PHONE_STATE%s: This permission is required to get the current phone number. This is used for some dual-sim functionality and to ensure sending messages to the current number, from the current number, is handled correctly. This information is never transmitted off the device."
+    "PRIVACY_POLICY": "Política de privacidad",
+    "PRIVACY_POLICY_TEXT": "Silence no recopila ni transmite información personal alguna. Precisamos los siguientes permisos: %sINTERNET%s: Se requiere este permiso para que la aplicación pueda transferir datos a/de proveedores de servicio móvil/celular y poder habilitar mensajes MMS. No se usa para ningún otro propósito. %sREAD_CONTACTS%s: Se requiere este permiso para que la aplicación pueda sugerir contactos al usuario según escribe, además de mostrar información de contacto junto a los hilos de mensaje. Esta información nunca se transmite fuera del dispositivo. %sREAD_PHONE_STATE%s: Se requiere este permiso para obtener el número de teléfono actual. Esto se usa para algunas funcionalidades con SIM-dual, y para asegurarse de que el envío de mensajes al número actual, desde el número actual, se gestiona correctamente. Esta información nunca se transmite fuera del dispositivo."
 }

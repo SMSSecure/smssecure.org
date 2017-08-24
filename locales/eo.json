@@ -15,7 +15,7 @@
     "RELIABLE": "Senmalfunkcia",
     "RELIABLE_TEXT": "Silence komunikadas per ĉifritaj SMS-aj mesaĝoj. Nenia servilo aŭ retkonekto estas bezonata.",
     "PRIVATE": "Privata",
-    "PRIVATE_TEXT": "Silence provizas plenan ĉifradon por viaj mesaĝoj uzante zorgege projektitan ĉifran protokolon 'Axolotl'.",
+    "PRIVATE_TEXT": "Silence provizas plenan ĉifradon por viaj mesaĝoj uzante zorgege projektitan ĉifran protokolon de aplikaĵo Signal.",
     "SAFE": "Sekura",
     "SAFE_TEXT": "Ĉiuj mesaĝoj estas ĉifritaj loke, do se via poŝtelefono estos perdita aŭ ŝtelita, viaj mesaĝoj estos protektitaj.",
     "OSS": "Malfermkoda",

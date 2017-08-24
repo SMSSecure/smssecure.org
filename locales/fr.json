@@ -15,7 +15,7 @@
     "RELIABLE": "Fiable",
     "RELIABLE_TEXT": "Silence communique par SMS chiffrés. Pas de serveurs ou de connexion internet requise.",
     "PRIVATE": "Privé",
-    "PRIVATE_TEXT": "Vos messages sont chiffrés de bout à bout grâce au protocole rigoureux d'Axolotl.",
+    "PRIVATE_TEXT": "Silence propose un chiffrement de vos messages de bout en bout en recourant au protocole cryptographique minutieusement élaboré par Signal.",
     "SAFE": "Sûr",
     "SAFE_TEXT": "Tous les messages sont chiffrés localement ; ils seront donc protégés si jamais votre téléphone est perdu ou volé.",
     "OSS": "Libre",
