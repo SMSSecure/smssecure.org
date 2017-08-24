@@ -15,3 +15,5 @@ assets/js/bootstrap.js
 assets/js/jquery-actual.js
 assets/js/jquery-scrollto.js
 assets/js/jquery.js
+
+package-lock.json
