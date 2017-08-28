@@ -1,0 +1,23 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+As of today, 2017-08-25, Silence has not been compromised. No backdoor has been
+placed and no known security breach has been left.
+
+This canary should be updated and resigned every two months.
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEJoTs72B2Glsln0XMh41tCR7eCYkFAlmj43kACgkQh41tCR7e
+CYkmKQ//egXDDR1kyJ3wMku9UGMbio26Vtq3Fkr/B+dDOQNCeh4sqd3oazegzRUh
+f3Vv+oHugcMCUr6k2NGKBV79PnMfhO6/1AMjDEn/J/aJ6JRuHpoV9k5huzliPYiJ
+uCg0bPKuyV7u9j6nD+a//T5AStxBHWrAhT+VU5s4rJYNEp5uwoa5N4eDZXMFlUlR
+RIG3X+gX4bGtrsZTA/sh6YA5zGQzmXzAj17ATGpOrnffmIYxdjpyXzdFaMILhjoP
+i7ea+2pnHTpy1LY24WDIdie7HjeBOzz0P9jRzLV94jJvbzHCzW+0VsBIdX/hzNnR
+WovWKZ3RlmFa7Y35EcrGnWqvaLzu9XDVExt/tWEJ6J6mYUblx9xtU18D+7tC7yP8
+AvlXdNAf6ySUOywyoSEpXsKUK5aLVt4Uhl4j9mXfeebW2LqHUS8SevSp99EW3XSj
+Y0fY8iYDs8sUs2neS8cFO30iWdD0IvZXC26/DixPYRxX7UJKQqZpkwTvP1L8lrhc
+JfIzInHZuY9p3iiKN4x7oV3kOce5TwuU9oHg/F0ENDvxkWlBaFfmi2NNOA02j+HA
+MScjFvEkWlNxAWPqy/EQ0A8YSzgfalAfyPGrqUOJFouWfkq/z3yR8D/t+TdAUQLT
+/KFdC2m9lGLGl9zrfi/QV/9DBwZX+vu/cq8ZaYHWvJKDwusxnlk=
+=JrT6
+-----END PGP SIGNATURE-----
