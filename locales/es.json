@@ -43,6 +43,6 @@
     "SUPPORT_TEXT_ADDRESS": "Nuestra dirección de Bitcoin es %s",
     "PRIVACY_POLICY": "Política de privacidad",
     "PRIVACY_POLICY_TEXT": "Silence no recopila ni transmite información personal alguna. Precisamos los siguientes permisos: %sINTERNET%s: Se requiere este permiso para que la aplicación pueda transferir datos a/de proveedores de servicio móvil/celular y poder habilitar mensajes MMS. No se usa para ningún otro propósito. %sREAD_CONTACTS%s: Se requiere este permiso para que la aplicación pueda sugerir contactos al usuario según escribe, además de mostrar información de contacto junto a los hilos de mensaje. Esta información nunca se transmite fuera del dispositivo. %sREAD_PHONE_STATE%s: Se requiere este permiso para obtener el número de teléfono actual. Esto se usa para algunas funcionalidades con SIM-dual, y para asegurarse de que el envío de mensajes al número actual, desde el número actual, se gestiona correctamente. Esta información nunca se transmite fuera del dispositivo.",
-  	"WARRANT_CANARY": "Warrant canary",
-    "WARRANT_CANARY_TEXT": "A signed warrant canary is published every two months to ensure that Silence has not been compromised by any third-party using a subpoena. You can %sdownload the warrant%s and the %sPGP key%s (fingerprint %s)."
+    "WARRANT_CANARY": "Canario de garantía",
+    "WARRANT_CANARY_TEXT": "Cada dos meses se publica un canario de garantía (warrant canary) firmado para asegurar que Silence no ha sido comprometido por ningún tercero usando un requerimiento judicial. Puede %sdescargar la garantía%s y la %sclave PGP%s (huella de validación %s)."
 }

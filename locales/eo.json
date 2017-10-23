@@ -9,7 +9,7 @@
     "GET_SOURCE_CODE": "Elŝuti fontkodon",
     "SOURCE_CODE_TEXT": "La fontkodo de Silence estas malferma, do iu ajn povas facile kontroli ĉu ĝi funkcias laŭ la priskribo. Ĝia permesilo estas GPLv3 kaj ĝi ćiam estos libera.",
     "GITHUB": "Rigardi fontkodon ĉe GitHub »",
-    "LAST_COMMIT": "Lasta enmeto: \"%s\", de %s (%s).",
+    "LAST_COMMIT": "Lasta enmeto: “%s”, de %s (%s).",
     "EASY": "Facila",
     "EASY_TEXT": "Silence laboras kiel iu ajn alia SMS-a aplikaĵo. Vi kaj viaj amikoj ne devos ie ajn ensaluti aŭ aniĝi.",
     "RELIABLE": "Senmalfunkcia",
@@ -34,7 +34,7 @@
     "GITHUB_BADGE_ISSUE": "Problemoj",
     "GITHUB_BADGE_ISSUE_LABEL": "Klopodi pri Silence je GitHub",
     "GITHUB_BADGE_ISSUE_COUNT_LABEL": "# problemoj je GitHub",
-    "BETA_DESCRIPTION": "Se vi volas partopreni en testado de beta-eldonoj, bonvolu viziti la %sabon-formularon en Play Store%s. Uzantoj de F-Droid ne devas fari ion ajn escepte aktivigi 'Nestabilaj ĝisdatigoj' en la kliento F-Droid.",
+    "BETA_DESCRIPTION": "Se vi volas partopreni en testado de beta-eldonoj, bonvolu viziti la %sabon-formularon en Play Store%s. Uzantoj de F-Droid ne devas fari ion ajn escepte aktivigi ‘Nestabilaj ĝisdatigoj’ en la kliento F-Droid.",
     "WARNING": "Averto",
     "US_WARNING_MODAL": "Pro kialoj rilataj registrita marko, Silence estas nuntempe ne disponebla per Play Store en Usono, tamen vi plue povas %selŝuti Silence en Usono per F-Droid%s - deponejo de Libera kaj Malfermkoda Programaro (FOSS) por la operaciumo Android subtenata de la Fondaĵo por Libera Programaro (FSF).",
     "US_WARNING_MODAL_CONTINUE": "Pluigi al Play Store",
@@ -43,6 +43,6 @@
     "SUPPORT_TEXT_ADDRESS": "Nia Bitmon-adreso estas %s",
     "PRIVACY_POLICY": "Politiko pri privateco",
     "PRIVACY_POLICY_TEXT": "Silence ne kolektas aŭ transsendas iujn ajn privatajn informojn. Ni postulas la jenajn permesojn:\n%sINTERNET%s: tiu ĉi permeso estas postulata por transsendi datumojn el/al servo de ĉelret-provizanto por liveri MMS-ajn mesaĝojn. Ĝi ne estas uzata por iu ajn celo.\n%sREAD_CONTACTS%s: tiu ĉi permeso estas postulata por ke aplikaĵo povu sugesti kontaktojn al uzanto dum tajpi, kaj por montri informojn pri kontakto ĉe mesaĝa fadeno. Tiuj ĉi informoj neniam estas transsendataj ekstere la aparato.\n%sREAD_PHONE_STATE%s: tiu ĉi permeso estas postulata por akiri la nunan telefon-numeron. Ĝi estas uzata por priservi du SIM-kartojn kaj por certigi, ke sendado de mesaĝoj el/al nuna numero funkcias ĝuste. Tiuj ĉi informoj neniam estas transsendataj ekstere la aparato.",
-  	"WARRANT_CANARY": "Warrant canary",
-    "WARRANT_CANARY_TEXT": "A signed warrant canary is published every two months to ensure that Silence has not been compromised by any third-party using a subpoena. You can %sdownload the warrant%s and the %sPGP key%s (fingerprint %s)."
+    "WARRANT_CANARY": "‘Kanaria’ garantio",
+    "WARRANT_CANARY_TEXT": "Subskribita ‘kanaria’ garantio estas publikigata ĉiu du monatoj por certigi, ke Silence ne estas kompromitita de ekstera partio per leĝordono. Vi povas %selŝuti la garantion%s kaj la %sPGP-ŝlosilon%s (fingrospuro %s)."
 }
