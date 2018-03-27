@@ -3,13 +3,12 @@ npm-debug.log
 cache*
 
 assets/css/bootstrap.css
-assets/css/font-awesome.css
+assets/css/fork-awesome.css
 
-assets/fonts/fontawesome-webfont.eot
-assets/fonts/fontawesome-webfont.svg
-assets/fonts/fontawesome-webfont.ttf
-assets/fonts/fontawesome-webfont.woff
-assets/fonts/FontAwesome.otf
+assets/fonts/forkawesome-webfont.eot
+assets/fonts/forkawesome-webfont.svg
+assets/fonts/forkawesome-webfont.ttf
+assets/fonts/forkawesome-webfont.woff
 
 assets/js/bootstrap.js
 assets/js/jquery-actual.js

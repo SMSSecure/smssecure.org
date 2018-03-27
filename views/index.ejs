@@ -16,7 +16,7 @@
 	<meta property="og:url" content="http://<%= req.headers.host %><%= req.url %>" />
 
 	<link rel="stylesheet" href="/css/bootstrap.css">
-	<link rel="stylesheet" href="/css/font-awesome.css">
+	<link rel="stylesheet" href="/css/fork-awesome.css">
 	<link rel="stylesheet" href="/css/style.css" media="screen"/>
 	<link rel="stylesheet" href="/css/gh-fork-ribbon.css" media="screen"/>
 	<link rel="stylesheet" href="/css/github.css" media="screen"/>
@@ -76,7 +76,7 @@
 							<small><%- res.__('BETA_DESCRIPTION', '<a href="/beta">', '</a>') %></small>
 						</p>
 						<div class="text-center">
-							<i class="fa fa-android"></i>
+							<i class="fa fa-android" aria-hidden="true"></i>
 						</div>
 					</div>
 					<div class="col-md-6">
@@ -84,7 +84,7 @@
 						<p><%= res.__('SOURCE_CODE_TEXT') %></p>
 						<p><a href="https://github.com/SilenceIM/Silence" class="btn btn-o btn-lg"><%= res.__('GITHUB') %></a></p>
 						<div class="text-center">
-							<i class="fa fa-github"></i>
+							<i class="fa fa-github" aria-hidden="true"></i>
 						</div>
 					</div>
 				</div>
@@ -104,21 +104,21 @@
 				<div class="row">
 					<div class="col-md-4">
 						<div class="item">
-							<i class="fa fa-magic"></i>
+							<i class="fa fa-magic" aria-hidden="true"></i>
 							<h2><%= res.__('EASY') %></h2>
 							<p><%= res.__('EASY_TEXT') %></p>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="item">
-							<i class="fa fa-cogs"></i>
+							<i class="fa fa-cogs" aria-hidden="true"></i>
 							<h2><%= res.__('RELIABLE') %></h2>
 							<p><%= res.__('RELIABLE_TEXT') %></p>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="item">
-							<i class="fa fa-lock"></i>
+							<i class="fa fa-lock" aria-hidden="true"></i>
 							<h2><%= res.__('PRIVATE') %></h2>
 							<p><%= res.__('PRIVATE_TEXT') %></p>
 						</div>
@@ -127,7 +127,7 @@
 				<div class="row justify-content-center">
 					<div class="col-md-4">
 						<div class="item">
-							<i class="fa fa-eye-slash"></i>
+							<i class="fa fa-eye-slash" aria-hidden="true"></i>
 							<h2><%= res.__('SAFE') %></h2>
 							<p><%= res.__('SAFE_TEXT') %></p>
 						</div>
@@ -147,17 +147,17 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-2 text-center">
-						<i class="fa fa-comments-o" aria-hidden="true"></i>
+						<i class="fa fa-users" aria-hidden="true"></i>
 					</div>
 					<div class="col-md-10">
 						<h2><%= res.__('COMMUNITY') %></h2>
 						<p><%= res.__('COMMUNITY_TEXT') %></p>
 						<p>
-							<ul>
-								<li><%- res.__('COMMUNITY_TEXT_LIST_IRC', "<a href=\"https://webchat.freenode.net/?channels=Silence\">#Silence</a>") %></li>
-								<li><%- res.__('COMMUNITY_TEXT_LIST_TWITTER', "<a href=\"https://twitter.com/SilenceIM\">@SilenceIM</a>") %></li>
-								<li><%- res.__('COMMUNITY_TEXT_LIST_MASTODON', "<a href=\"https://mastodon.social/@silence\">@silence@mastodon.social</a>") %></li>
-								<li><%- res.__('COMMUNITY_TEXT_LIST_EMAIL', "<a href=\"mailto:support@silence.im\">support@silence.im</a>", "<a href=\"/pgp.pub\">", "</a>") %></li>
+							<ul class="community-list">
+								<li><i class="fa fa-comments-o" aria-hidden="true"></i> <%- res.__('COMMUNITY_TEXT_LIST_IRC', "<a href=\"https://webchat.freenode.net/?channels=Silence\">#Silence</a>") %></li>
+								<li><i class="fa fa-twitter" aria-hidden="true"></i> <%- res.__('COMMUNITY_TEXT_LIST_TWITTER', "<a href=\"https://twitter.com/SilenceIM\">@SilenceIM</a>") %></li>
+								<li><i class="fa fa-mastodon" aria-hidden="true"></i> <%- res.__('COMMUNITY_TEXT_LIST_MASTODON', "<a href=\"https://mastodon.social/@silence\">@silence@mastodon.social</a>") %></li>
+								<li><i class="fa fa-envelope" aria-hidden="true"></i> <%- res.__('COMMUNITY_TEXT_LIST_EMAIL', "<a href=\"mailto:support@silence.im\">support@silence.im</a>", "<a href=\"/pgp.pub\">", "</a>") %></li>
 							</ul>
 						</p>
 					</div>
