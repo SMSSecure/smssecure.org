@@ -58,35 +58,33 @@
 
 		<div class="content-block" id="app">
 			<div class="container">
-				<header class="block-heading cleafix">
-					<h4><%= res.__('DESCRIPTION') %></h4>
+				<header class="description">
+					<h5><%= res.__('DESCRIPTION') %></h5>
 				</header>
-				<div class="block-body">
-					<div class="row">
-						<div class="col-md-6">
-							<h2><%= res.__('GET_THE_APP') %></h2>
-							<p class="text-center" id="non-us">
-								<a href="https://f-droid.org/app/org.smssecure.smssecure"><img src="/images/fdroid.png" alt="On F-Droid" height="60" width="167"></a>
-								<a href="https://play.google.com/store/apps/details?id=org.smssecure.smssecure" id="playstore"><img src="/images/play.png" alt="On Google Play" height="60" width="173"></a>
-							</p>
-							<p class="text-center" id="us">
-								<a href="https://f-droid.org/app/org.smssecure.smssecure"><img src="/images/fdroid.png" alt="On F-Droid" height="60" width="167"></a>
-								<button type="button" class="btn btn-link btn-xs" data-toggle="modal" data-target="#USModal"><img src="/images/play.png" alt="On Google Play" height="60" width="173"></a></button>
-							</p>
-							<p class="text-center">
-								<small><%- res.__('BETA_DESCRIPTION', '<a href="/beta">', '</a>') %></small>
-							</p>
-							<div class="text-center">
-								<i class="fa fa-android"></i>
-							</div>
+				<div class="row">
+					<div class="col-md-6">
+						<h2><%= res.__('GET_THE_APP') %></h2>
+						<p class="text-center" id="non-us">
+							<a href="https://f-droid.org/app/org.smssecure.smssecure"><img src="/images/fdroid.png" alt="On F-Droid" height="60" width="167"></a>
+							<a href="https://play.google.com/store/apps/details?id=org.smssecure.smssecure" id="playstore"><img src="/images/play.png" alt="On Google Play" height="60" width="173"></a>
+						</p>
+						<p class="text-center" id="us">
+							<a href="https://f-droid.org/app/org.smssecure.smssecure"><img src="/images/fdroid.png" alt="On F-Droid" height="60" width="167"></a>
+							<button type="button" class="btn btn-link btn-xs" data-toggle="modal" data-target="#USModal"><img src="/images/play.png" alt="On Google Play" height="60" width="173"></a></button>
+						</p>
+						<p class="text-center">
+							<small><%- res.__('BETA_DESCRIPTION', '<a href="/beta">', '</a>') %></small>
+						</p>
+						<div class="text-center">
+							<i class="fa fa-android"></i>
 						</div>
-						<div class="col-md-6">
-							<h2><%= res.__('GET_SOURCE_CODE') %></h2>
-							<p><%= res.__('SOURCE_CODE_TEXT') %></p>
-							<p><a href="https://github.com/SilenceIM/Silence" class="btn btn-o btn-lg"><%= res.__('GITHUB') %></a></p>
-							<div class="text-center">
-								<i class="fa fa-github"></i>
-							</div>
+					</div>
+					<div class="col-md-6">
+						<h2><%= res.__('GET_SOURCE_CODE') %></h2>
+						<p><%= res.__('SOURCE_CODE_TEXT') %></p>
+						<p><a href="https://github.com/SilenceIM/Silence" class="btn btn-o btn-lg"><%= res.__('GITHUB') %></a></p>
+						<div class="text-center">
+							<i class="fa fa-github"></i>
 						</div>
 					</div>
 				</div>
@@ -102,45 +100,43 @@
 		<% } %>
 
 		<div class="content-block parallax" id="description">
-			<div class="container text-center">
-				<div class="block-body">
-					<div class="row">
-						<div class="col-md-4">
-							<div class="item">
-								<i class="fa fa-magic"></i>
-								<h2><%= res.__('EASY') %></h2>
-								<p><%= res.__('EASY_TEXT') %></p>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="item">
-								<i class="fa fa-cogs"></i>
-								<h2><%= res.__('RELIABLE') %></h2>
-								<p><%= res.__('RELIABLE_TEXT') %></p>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="item">
-								<i class="fa fa-lock"></i>
-								<h2><%= res.__('PRIVATE') %></h2>
-								<p><%= res.__('PRIVATE_TEXT') %></p>
-							</div>
+			<div class="container text-center block-body">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="item">
+							<i class="fa fa-magic"></i>
+							<h2><%= res.__('EASY') %></h2>
+							<p><%= res.__('EASY_TEXT') %></p>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-md-push-3 col-md-3">
-							<div class="item">
-								<i class="fa fa-eye-slash"></i>
-								<h2><%= res.__('SAFE') %></h2>
-								<p><%= res.__('SAFE_TEXT') %></p>
-							</div>
+					<div class="col-md-4">
+						<div class="item">
+							<i class="fa fa-cogs"></i>
+							<h2><%= res.__('RELIABLE') %></h2>
+							<p><%= res.__('RELIABLE_TEXT') %></p>
 						</div>
-						<div class="col-md-push-3 col-md-3">
-							<div class="item">
-								<i class="fa fa-check"></i>
-								<h2><%= res.__('OSS') %></h2>
-								<p><%= res.__('OSS_TEXT') %></p>
-							</div>
+					</div>
+					<div class="col-md-4">
+						<div class="item">
+							<i class="fa fa-lock"></i>
+							<h2><%= res.__('PRIVATE') %></h2>
+							<p><%= res.__('PRIVATE_TEXT') %></p>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-md-4">
+						<div class="item">
+							<i class="fa fa-eye-slash"></i>
+							<h2><%= res.__('SAFE') %></h2>
+							<p><%= res.__('SAFE_TEXT') %></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="item">
+							<i class="fa fa-check"></i>
+							<h2><%= res.__('OSS') %></h2>
+							<p><%= res.__('OSS_TEXT') %></p>
 						</div>
 					</div>
 				</div>
@@ -164,10 +160,10 @@
 		<div class="content-block" id="bitcoin">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-2 col-md-push-10 text-center">
+					<div class="col-md-2 order-md-2 order-1 text-center">
 						<i class="fa fa-btc" aria-hidden="true"></i>
 					</div>
-					<div class="col-md-10 col-md-pull-2">
+					<div class="col-md-10 order-md-1 order-2">
 						<h2><%= res.__('SUPPORT_TITLE') %></h2>
 						<p><%= res.__('SUPPORT_TEXT') %></p>
 						<p><%- res.__('SUPPORT_TEXT_ADDRESS', '<code>1LoKZXg3bx6kfwAhEFQqS9pgeCE1CFMEJb</code>') %></p>
@@ -193,10 +189,10 @@
 		<div class="content-block" id="privacy">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-2 text-center">
+					<div class="col-md-2 order-md-2 order-1 text-center">
 						<i class="fa fa-user-secret" aria-hidden="true"></i>
 					</div>
-					<div class="col-md-10">
+					<div class="col-md-10 order-md-1 order-2">
 						<h2><%= res.__('PRIVACY_POLICY') %></h2>
 						<p><%- res.__('PRIVACY_POLICY_TEXT', '<ul><li><code>', '</code>', '</li><li><code>', '</code>', '</li><li><code>', '</code>') %></li></ul></p>
 					</div>
@@ -208,37 +204,37 @@
 			<div class="container">
 				<% if (typeof github != 'undefined'){ %>
 				<div class="row">
-					<div class="col-md-3 col-xs-6 github-social text-center">
+					<div class="col-lg-3 github-social">
 						<span class="github-btn github-btn-large">
 							<a class="gh-btn" href="https://github.com/SilenceIM/Silence">
-								<span class="gh-ico text-center"><i class="fa fa-eye"></i></span>
+								<span class="gh-ico"><i class="fa fa-eye"></i></span>
 								<span class="gh-text"><%= res.__('GITHUB_BADGE_WATCH') %></span>
 							</a>
 							<a class="gh-count" href="https://github.com/SilenceIM/Silence"><%= github.subscribers_count %></a>
 						</span>
 					</div>
-					<div class="col-md-3 col-xs-6 github-social">
+					<div class="col-lg-3 github-social">
 						<span class="github-btn github-btn-large">
 							<a class="gh-btn" href="https://github.com/SilenceIM/Silence">
-								<span class="gh-ico text-center"><i class="fa fa-star"></i></span>
+								<span class="gh-ico"><i class="fa fa-star"></i></span>
 								<span class="gh-text"><%= res.__('GITHUB_BADGE_STAR') %></span>
 							</a>
 							<a class="gh-count" href="https://github.com/SilenceIM/Silence"><%= github.stargazers_count %></a>
 						</span>
 					</div>
-					<div class="col-md-3 col-xs-6 github-social">
+					<div class="col-lg-3 github-social">
 						<span class="github-btn github-btn-large">
 							<a class="gh-btn" href="https://github.com/SilenceIM/Silence/fork">
-								<span class="gh-ico text-center"><i class="fa fa-code-fork"></i></span>
+								<span class="gh-ico"><i class="fa fa-code-fork"></i></span>
 								<span class="gh-text"><%= res.__('GITHUB_BADGE_FORK') %></span>
 							</a>
 							<a class="gh-count" href="https://github.com/SilenceIM/Silence/fork"><%= github.forks %></a>
 						</span>
 					</div>
-					<div class="col-md-3 col-xs-6 github-social">
+					<div class="col-lg-3 github-social">
 						<span class="github-btn github-btn-large">
 							<a class="gh-btn" href="https://github.com/SilenceIM/Silence/issues">
-								<span class="gh-ico text-center"><i class="fa fa-exclamation"></i></span>
+								<span class="gh-ico"><i class="fa fa-exclamation"></i></span>
 								<span class="gh-text"><%= res.__('GITHUB_BADGE_ISSUE') %></span>
 							</a>
 							<a class="gh-count" href="https://github.com/SilenceIM/Silence/issues"><%= github.open_issues %></a>
@@ -256,34 +252,35 @@
 	</div>
 
 	<!-- Warning modal for US users -->
-	<div class="modal fade" id="USModal" tabindex="-1" role="dialog" aria-labelledby="USModalLabel">
-		<div class="vertical-alignment-helper">
-		  <div class="modal-dialog vertical-align-center" role="document">
-		    <div class="modal-content">
-					<div class="modal-header">
-						<h2 class="modal-title"><%= res.__('WARNING') %></h2>
-					</div>
-		      <div class="modal-body">
-		        <p><%- res.__('US_WARNING_MODAL', '<a href="https://f-droid.org/app/org.smssecure.smssecure">', '</a>') %></p>
+	<div class="modal fade" tabindex="-1" role="dialog" id="USModal">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title"><%= res.__('WARNING') %></h5>
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p><%- res.__('US_WARNING_MODAL', '<a href="https://f-droid.org/app/org.smssecure.smssecure">', '</a>') %></p>
 						<p class="text-center"><a href="https://play.google.com/store/apps/details?id=org.smssecure.smssecure" class="btn btn-o btn-lg"><%= res.__('US_WARNING_MODAL_CONTINUE') %></a></p>
-		      </div>
-		    </div>
-		  </div>
+				</div>
+			</div>
 		</div>
 	</div>
 
 	<!-- Privacy policy modal -->
-	<div class="modal fade" id="privacyModal" tabindex="-1" role="dialog" aria-labelledby="privacyModalLabel">
-		<div class="vertical-alignment-helper">
-			<div class="modal-dialog vertical-align-center" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h2 class="modal-title"><%= res.__('PRIVACY_POLICY') %></h2>
-					</div>
-					<div class="modal-body">
-						<p><%- res.__('PRIVACY_POLICY_TEXT', '<ul><li><code>', '</code>', '</li><li><code>', '</code>', '</li><li><code>', '</code>') %></li></ul></p>
-					</div>
+	<div class="modal fade" tabindex="-1" role="dialog" id="privacyModal">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title"><%= res.__('PRIVACY_POLICY') %></h5>
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p><%- res.__('PRIVACY_POLICY_TEXT', '<ul><li><code>', '</code>', '</li><li><code>', '</code>', '</li><li><code>', '</code>') %></li></ul></p>
 				</div>
 			</div>
 		</div>

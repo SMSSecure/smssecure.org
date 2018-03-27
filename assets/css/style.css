@@ -213,8 +213,13 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: #d8d8d8;
 }
 
+.description {
+	margin-bottom: 40px;
+}
+
 .block-body {
-	margin-top: 60px;
+	margin-top: 50px;
+	margin-bottom: 20px;
 }
 
 #header {
