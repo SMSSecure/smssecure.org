@@ -21,11 +21,11 @@
     "OSS": "Open bron",
     "OSS_TEXT": "Silence is vrije software, zodat iedereen de broncode kan bekijken om de beveiliging te controleren.",
     "COMMUNITY": "Kom erbij!",
-    "COMMUNITY_TEXT": "Have a question? Want to help out?",
-    "COMMUNITY_TEXT_LIST_IRC": "IRC: %s on Freenode",
+    "COMMUNITY_TEXT": "Heb je vragen? Wil je meehelpen?",
+    "COMMUNITY_TEXT_LIST_IRC": "IRC: %s op Freenode",
     "COMMUNITY_TEXT_LIST_TWITTER": "Twitter: %s",
     "COMMUNITY_TEXT_LIST_MASTODON": "Mastodon: %s",
-    "COMMUNITY_TEXT_LIST_EMAIL": "Email: %s (%sPGP key%s)",
+    "COMMUNITY_TEXT_LIST_EMAIL": "E-mail: %s (%sPGP-sleutel%s)",
     "GITHUB_BADGE_WATCH": "Bekijk",
     "GITHUB_BADGE_WATCH_LABEL": "Bekijk Silence op GitHub",
     "GITHUB_BADGE_WATCH_COUNT_LABEL": "# volgers op GitHub",
@@ -43,10 +43,10 @@
     "US_WARNING_MODAL": "Vanwege problemen met het handelsrecht is Silence momenteel niet beschikbaar in de Amerikaanse versie van de Play Store, maar je kan Silence vanuit de VS nog steeds downloaden via F-Droid%s, een bron voor Android-apps uitgebracht als vrije software (FOSS), die ondersteund wordt door de Free Software Foundation (FSF).",
     "US_WARNING_MODAL_CONTINUE": "Ga verder naar de Play Store",
     "SUPPORT_TITLE": "Steun Silence!",
-    "SUPPORT_TEXT": "Silence is powered by your donations. This will help us to pay various costs (web hosting, domain name, etc.). We accept bitcoins and %srecurrent donations via Liberapay%s.",
+    "SUPPORT_TEXT": "Silence draait op donaties. Dit helpt ons om verschillende kosten (webhosting, domeinnaamregistratie, enz.) te betalen. We aanvaarden Bitcoins en %sweerkerende donaties via Liberapay%s.",
     "SUPPORT_TEXT_BITCOIN": "Ons Bitcoinadres is %s",
     "PRIVACY_POLICY": "Privacybeleid",
     "PRIVACY_POLICY_TEXT": "Silence verzamelt of verzendt geen persoonlijke gegevens. We hebben de volgende permissies nodig: %sINTERNET%s: deze permissie is nodig om MMS-berichten te ontvangen en verzenden. Het wordt nergens anders voor gebruikt. %sREAD_CONTACTS%s: deze permissie is nodig om contactpersonen te tonen aan de gebruiker tijdens het typen van een naam, en om contactgegevens te tonen bij de gesprekken. Deze gegevens worden nooit verstuurd buiten het apparaat. %sREAD_PHONE_STATE%s: deze permissie wordt gebruikt om het huidige telefoonnummer op te vragen. Dit wordt gebruikt voor bepaalde dual-SIM-functionaliteit en om er voor te zorgen dat berichten van en naar het juiste telefoonnummer gestuurd worden. Deze gegevens worden nooit verstuurd buiten het apparaat.",
-    "WARRANT_CANARY": "Warrant canary",
-    "WARRANT_CANARY_TEXT": "A signed warrant canary is published every two months to ensure that Silence has not been compromised by any third-party using a subpoena. You can %sdownload the warrant%s and the %sPGP key%s (fingerprint %s)."
+    "WARRANT_CANARY": "Garantiekanarie",
+    "WARRANT_CANARY_TEXT": "Een ondertekende garantiekanarie wordt elke twee maanden gepubliceerd om je te verzekeren dat Silence niet door een derde partij met een dagvaarding gecompromitteerd is. Je kan %sde kanarie downloaden%s evenals de %sPGP-sleutel%s (vingerafdruk %s)."
 }
