@@ -1,6 +1,6 @@
-FROM node:latest
+FROM node:8
 
-RUN apt-get install git && mkdir -p /opt/app
+RUN apt-get update && apt-get install git -y --no-install-recommends && mkdir -p /opt/app
 WORKDIR /opt/app
 COPY . /opt/app
 RUN npm install && cd node_modules/geoip-lite/ && npm run-script updatedb
