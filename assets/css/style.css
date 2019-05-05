@@ -204,19 +204,8 @@ h1, h2, h3, h4, h5, h6 {
 .fa-github, .fa-android {
 	font-size: 192px;
 }
-.fa-users, .fa-user-secret, .fa-key {
+.fa-users, .fa-btc, .fa-user-secret, .fa-key {
 	font-size: 100px;
-}
-.fa-btc, .fa-liberapay {
-	font-size: 75px;
-	display: block;
-}
-.fa-btc {
-	padding-top: 25px;
-}
-.fa-liberapay {
-	padding-left: 100px;
-	margin-top: -25px;
 }
 #git {
 	padding-top: 25px;
