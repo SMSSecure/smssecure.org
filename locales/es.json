@@ -8,7 +8,7 @@
     "GET_THE_APP": "Obtenga la aplicación",
     "GET_SOURCE_CODE": "Obtenga el código fuente",
     "SOURCE_CODE_TEXT": "El código fuente para Silence es abierto, así que cualquiera puede verificar fácilmente que funciona tal como declara hacerlo. Está licenciado bajo la GPLv3 y siempre será libre.",
-    "GITHUB": "Ver código fuente en GitHub »",
+    "GITLAB": "View source code »",
     "LAST_COMMIT": "Última consignación (commit): \"%s\", por %s (%s).",
     "EASY": "Fácil",
     "EASY_TEXT": "Silence funciona como cualquier otra aplicación de SMS. No hay nada en lo que registrarse ni ningún nuevo servicio al que sus amigos precisen unirse.",

@@ -8,7 +8,7 @@
     "GET_THE_APP": "Download de app",
     "GET_SOURCE_CODE": "Download de broncode",
     "SOURCE_CODE_TEXT": "De broncode van Silence is open zodat iedereen eenvoudig kan nagaan dat het werkt zoals beloofd. Ze wordt verspreid onder de GPLv3-licentie en zal altijd vrij zijn.",
-    "GITHUB": "Bekijk de broncode op GitHub »",
+    "GITLAB": "View source code »",
     "LAST_COMMIT": "Laatste aanpassing: \"%s\", door %s (%s).",
     "EASY": "Eenvoudig",
     "EASY_TEXT": "Silence werkt zoals iedere andere SMS-applicatie. Jij en je vrienden hoeven nergens een account aan te maken .",

@@ -18,8 +18,6 @@
 	<link rel="stylesheet" href="/css/bootstrap.css">
 	<link rel="stylesheet" href="/css/fork-awesome.css">
 	<link rel="stylesheet" href="/css/style.css" media="screen"/>
-	<link rel="stylesheet" href="/css/gh-fork-ribbon.css" media="screen"/>
-	<link rel="stylesheet" href="/css/github.css" media="screen"/>
 
 	<link rel="shortcut icon" href="/images/favicon.png">
 
@@ -28,11 +26,6 @@
 </head>
 
 <body>
-	<div class="github-fork-ribbon-wrapper right">
-		<div class="github-fork-ribbon">
-			<a href="https://github.com/SilenceIM/Silence"><%= res.__('FORK_US') %></a>
-		</div>
-	</div>
 	<div id="wrapper">
 
 		<div id="header" class="content-block">
@@ -82,9 +75,9 @@
 					<div class="col-md-6">
 						<h2><%= res.__('GET_SOURCE_CODE') %></h2>
 						<p><%= res.__('SOURCE_CODE_TEXT') %></p>
-						<p><a href="https://github.com/SilenceIM/Silence" class="btn btn-o btn-lg"><%= res.__('GITHUB') %></a></p>
+						<p><a href="https://git.silence.dev/Silence/Silence-Android/" class="btn btn-o btn-lg"><%= res.__('GITLAB') %></a></p>
 						<div class="text-center">
-							<i class="fa fa-github" aria-hidden="true"></i>
+							<i class="fa fa-gitlab" aria-hidden="true"></i>
 						</div>
 					</div>
 				</div>
@@ -94,7 +87,7 @@
 		<% if (commit !== null){ %>
 		<div class="content-block" id="git">
 			<div class="container text-center">
-				<p><%- res.__('LAST_COMMIT', '<a href="'+commit.link+'">'+commit.message+'</a>', '<a href="https://github.com/'+commit.author+'">'+commit.author+'</a>', commit.date) %></p>
+				<p><%- res.__('LAST_COMMIT', '<a href="'+commit.link+'">'+commit.message+'</a>', commit.author, commit.date) %></p>
 			</div>
 		</div>
 		<% } %>
@@ -210,46 +203,6 @@
 
 		<div class="content-block" id="footer">
 			<div class="container">
-				<% if (typeof github != 'undefined'){ %>
-				<div class="row">
-					<div class="col-lg-3 github-social">
-						<span class="github-btn github-btn-large">
-							<a class="gh-btn" href="https://github.com/SilenceIM/Silence">
-								<span class="gh-ico"><i class="fa fa-eye"></i></span>
-								<span class="gh-text"><%= res.__('GITHUB_BADGE_WATCH') %></span>
-							</a>
-							<a class="gh-count" href="https://github.com/SilenceIM/Silence"><%= github.subscribers_count %></a>
-						</span>
-					</div>
-					<div class="col-lg-3 github-social">
-						<span class="github-btn github-btn-large">
-							<a class="gh-btn" href="https://github.com/SilenceIM/Silence">
-								<span class="gh-ico"><i class="fa fa-star"></i></span>
-								<span class="gh-text"><%= res.__('GITHUB_BADGE_STAR') %></span>
-							</a>
-							<a class="gh-count" href="https://github.com/SilenceIM/Silence"><%= github.stargazers_count %></a>
-						</span>
-					</div>
-					<div class="col-lg-3 github-social">
-						<span class="github-btn github-btn-large">
-							<a class="gh-btn" href="https://github.com/SilenceIM/Silence/fork">
-								<span class="gh-ico"><i class="fa fa-code-fork"></i></span>
-								<span class="gh-text"><%= res.__('GITHUB_BADGE_FORK') %></span>
-							</a>
-							<a class="gh-count" href="https://github.com/SilenceIM/Silence/fork"><%= github.forks %></a>
-						</span>
-					</div>
-					<div class="col-lg-3 github-social">
-						<span class="github-btn github-btn-large">
-							<a class="gh-btn" href="https://github.com/SilenceIM/Silence/issues">
-								<span class="gh-ico"><i class="fa fa-exclamation"></i></span>
-								<span class="gh-text"><%= res.__('GITHUB_BADGE_ISSUE') %></span>
-							</a>
-							<a class="gh-count" href="https://github.com/SilenceIM/Silence/issues"><%= github.open_issues %></a>
-						</span>
-					</div>
-				</div>
-				<% } %>
 				<div class="row footer-text-container">
 					<div class="col-md-12">
 						<p class="small footer-text"><a href="#privacy"><%= res.__('PRIVACY_POLICY') %></a></p>

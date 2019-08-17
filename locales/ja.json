@@ -8,7 +8,7 @@
     "GET_THE_APP": "アプリを入手",
     "GET_SOURCE_CODE": "ソースコードを入手",
     "SOURCE_CODE_TEXT": "Silence のソースはオープンなので、誰でも簡単にアドバタイズとして動作することを確認することができます。GPLv3 でライセンスされ、常にフリーです。",
-    "GITHUB": "GitHub でソースコードを参照 »",
+    "GITLAB": "View source code »",
     "LAST_COMMIT": "最新コミット: \"%s\", by %s (%s).",
     "EASY": "簡単",
     "EASY_TEXT": "Silence は、他の SMS アプリケーションと同様に動作します。サインアップする必要はありませんし、あなたの友人が新しいサービスに参加する必要もありません。",

@@ -8,7 +8,7 @@
     "GET_THE_APP": "Descarcă aplicaţia",
     "GET_SOURCE_CODE": "Obține codul sursă",
     "SOURCE_CODE_TEXT": "The source for Silence is open, so that anyone can easily verify it works as advertised. It is licensed GPLv3 and will always be free.",
-    "GITHUB": "Vezi codul sursă pe GitHub »",
+    "GITLAB": "View source code »",
     "LAST_COMMIT": "Ultimul commit: \"%s\", by %s (%s).",
     "EASY": "Uşor",
     "EASY_TEXT": "Silence works like any other SMS application. There's nothing to sign up for and no new service your friends need to join.",

@@ -114,7 +114,7 @@ app.get('/', function (req, res) {
 			commit.message = json.commits[0].commit.message.split('\n')[0];
 			commit.date = moment(json.commits[0].commit.author.date).fromNow();
 			commit.author = json.commits[0].author.login;
-			commit.link = 'https://github.com/SilenceIM/Silence/commit/'+json.commits[0].sha;
+			commit.link = 'https://git.silence.dev/Silence/Silence-Android/commit/'+json.commits[0].sha;
 		}
 		return res.render('index', {req: req, res: res, commit: commit, github: json.details});
 	});

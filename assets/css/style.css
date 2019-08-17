@@ -201,7 +201,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 60px 0 10px 0;
 	text-align: justify;
 }
-.fa-github, .fa-android {
+.fa-gitlab, .fa-android {
 	font-size: 192px;
 }
 .fa-users, .fa-btc, .fa-user-secret, .fa-key {

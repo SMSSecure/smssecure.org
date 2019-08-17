@@ -8,7 +8,7 @@
     "GET_THE_APP": "Elŝuti aplikaĵon",
     "GET_SOURCE_CODE": "Elŝuti fontkodon",
     "SOURCE_CODE_TEXT": "La fontkodo de Silence estas malferma, do iu ajn povas facile kontroli ĉu ĝi funkcias laŭ la priskribo. Ĝia permesilo estas GPLv3 kaj ĝi ćiam estos libera.",
-    "GITHUB": "Rigardi fontkodon ĉe GitHub »",
+    "GITLAB": "View source code »",
     "LAST_COMMIT": "Lasta enmeto: “%s”, de %s (%s).",
     "EASY": "Facila",
     "EASY_TEXT": "Silence laboras kiel iu ajn alia SMS-a aplikaĵo. Vi kaj viaj amikoj ne devos ie ajn ensaluti aŭ aniĝi.",

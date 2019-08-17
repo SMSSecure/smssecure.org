@@ -8,7 +8,7 @@
     "GET_THE_APP": "Lade die App herunter",
     "GET_SOURCE_CODE": "Laden den Quellcode herunter",
     "SOURCE_CODE_TEXT": "Der Quellcode von Silence ist frei, sodass ihn jeder einfach überprüfen kann. Er steht unter der GPLv3 und wird immer frei bleiben.",
-    "GITHUB": "Betrachte den Quellcode auf Github »",
+    "GITLAB": "View source code »",
     "LAST_COMMIT": "Last commit: \"%s\", by %s (%s).",
     "EASY": "Einfach",
     "EASY_TEXT": "Silence funktioniert wie jede andere SMS App. Es ist keinerlei Anmeldung für euch und eure Freunde nötig.",
