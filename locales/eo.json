@@ -22,7 +22,7 @@
     "OSS_TEXT": "Silence estas libera kaj malfermkoda, kiu ajn povas verigi ĝian sekurecon per kontroli la fontkodon.",
     "COMMUNITY": "Aniĝu al la komunumo!",
     "COMMUNITY_TEXT": "Ĉu vi havas demandon? Ĉu vi volas helpi?",
-    "COMMUNITY_TEXT_LIST_IRC": "IRC: %s ĉe Freenode",
+    "COMMUNITY_TEXT_LIST_MATTERMOST": "Mattermost: %s",
     "COMMUNITY_TEXT_LIST_TWITTER": "Twitter: %s",
     "COMMUNITY_TEXT_LIST_MASTODON": "Mastodon: %s",
     "COMMUNITY_TEXT_LIST_EMAIL": "Retpoŝto: %s (%sPGP-ŝlosilo%s)",

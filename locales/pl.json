@@ -22,7 +22,7 @@
     "OSS_TEXT": "Silence jest wolnym i otwarto-źródłowym oprogramowaniem, każdy może sprawdzić jego bezpieczeństwo analizując kod źródłowy.",
     "COMMUNITY": "Dołącz do społeczności!",
     "COMMUNITY_TEXT": "Masz pytanie? Chcesz pomóc?",
-    "COMMUNITY_TEXT_LIST_IRC": "IRC: %s na Freenode",
+    "COMMUNITY_TEXT_LIST_MATTERMOST": "Mattermost: %s",
     "COMMUNITY_TEXT_LIST_TWITTER": "Twitter: %s",
     "COMMUNITY_TEXT_LIST_MASTODON": "Mastodon: %s",
     "COMMUNITY_TEXT_LIST_EMAIL": "El-poczta: %s (%sklucz PGP%s)",

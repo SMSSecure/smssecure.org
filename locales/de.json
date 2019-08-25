@@ -22,7 +22,7 @@
     "OSS_TEXT": "Silence is Free and Open Source, enabling anyone to verify its security by auditing the code.",
     "COMMUNITY": "Trete der Community bei!",
     "COMMUNITY_TEXT": "Have a question? Want to help out?",
-    "COMMUNITY_TEXT_LIST_IRC": "IRC: %s on Freenode",
+    "COMMUNITY_TEXT_LIST_MATTERMOST": "Mattermost: %s",
     "COMMUNITY_TEXT_LIST_TWITTER": "Twitter: %s",
     "COMMUNITY_TEXT_LIST_MASTODON": "Mastodon: %s",
     "COMMUNITY_TEXT_LIST_EMAIL": "Email: %s (%sPGP key%s)",

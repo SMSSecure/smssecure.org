@@ -22,7 +22,7 @@
     "OSS_TEXT": "Silence er fri programvare, alle kan validere sikkerheten ved å gå over koden.",
     "COMMUNITY": "Ta del i gemenskapen!",
     "COMMUNITY_TEXT": "Have a question? Want to help out?",
-    "COMMUNITY_TEXT_LIST_IRC": "IRC: %s on Freenode",
+    "COMMUNITY_TEXT_LIST_MATTERMOST": "Mattermost: %s",
     "COMMUNITY_TEXT_LIST_TWITTER": "Twitter: %s",
     "COMMUNITY_TEXT_LIST_MASTODON": "Mastodon: %s",
     "COMMUNITY_TEXT_LIST_EMAIL": "Email: %s (%sPGP key%s)",
