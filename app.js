@@ -37,17 +37,8 @@ app.set('view engine', 'ejs');
 
 updateCache = function(cb){
 	async.parallel({
-		details: function(callback){
-			request('https://api.github.com/repos/SilenceIM/Silence', {timeout: parseInt(process.env.TIMEOUT) || 2000, headers: {'User-Agent': 'Silence Website'}}, function (err, res) {
-				if (err || typeof res == 'undefined' || typeof res.statusCode == 'undefined' || res.statusCode != 200) return callback(true);
-				fs.writeFile('./cache-details.json', res.body, function (err) {
-					if (err) return callback("Cannot write cache-details.json");
-					return callback(null, JSON.parse(res.body));
-				});
-			});
-		},
 		commits: function(callback){
-			request('https://api.github.com/repos/SilenceIM/Silence/commits', {timeout: parseInt(process.env.TIMEOUT) || 2000, headers: {'User-Agent': 'Silence Website'}}, function (err, res) {
+			request('https://git.silence.dev/api/v4/projects/20/repository/commits', {timeout: parseInt(process.env.TIMEOUT) || 2000, headers: {'User-Agent': 'Silence Website'}}, function (err, res) {
 				if (err || typeof res == 'undefined' || typeof res.statusCode == 'undefined' || res.statusCode != 200) return callback(true);
 				fs.writeFile('./cache-commits.json', res.body, function (err) {
 					if (err) return callback("Cannot write cache-commits.json");
@@ -64,12 +55,6 @@ getCache = function(cb){
 	async.parallel({
 		commits: function(callback){
 			fs.readFile('./cache-commits.json', function (err, data) {
-				if (err) return callback(err);
-				return callback(null, JSON.parse(data));
-			});
-		},
-		details: function(callback){
-			fs.readFile('./cache-details.json', function (err, data) {
 				if (err) return callback(err);
 				return callback(null, JSON.parse(data));
 			});
@@ -111,13 +96,12 @@ app.get('/', function (req, res) {
 		if (err) console.log(err);
 		if (!err){
 			commit = {};
-			commit.message = json.commits[0].commit.message.split('\n')[0];
-			commit.date = moment(json.commits[0].commit.author.date).fromNow();
-			commit.author = json.commits[0].commit.author.login;
-			if (commit.author == undefined) commit.author = json.commits[0].commit.author.name;
-			commit.link = 'https://git.silence.dev/Silence/Silence-Android/commit/'+json.commits[0].sha;
+			commit.message = json.commits[0].message.split('\n')[0];
+			commit.date = moment(json.commits[0].authored_date).fromNow();
+			commit.author = json.commits[0].author_name;
+			commit.link = 'https://git.silence.dev/Silence/Silence-Android/commit/'+json.commits[0].id;
 		}
-		return res.render('index', {req: req, res: res, commit: commit, github: json.details});
+		return res.render('index', {req: req, res: res, commit: commit});
 	});
 });
 
