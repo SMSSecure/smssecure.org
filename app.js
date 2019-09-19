@@ -113,7 +113,8 @@ app.get('/', function (req, res) {
 			commit = {};
 			commit.message = json.commits[0].commit.message.split('\n')[0];
 			commit.date = moment(json.commits[0].commit.author.date).fromNow();
-			commit.author = json.commits[0].author.login;
+			commit.author = json.commits[0].commit.author.login;
+			if (commit.author == undefined) commit.author = json.commits[0].commit.author.name;
 			commit.link = 'https://git.silence.dev/Silence/Silence-Android/commit/'+json.commits[0].sha;
 		}
 		return res.render('index', {req: req, res: res, commit: commit, github: json.details});
