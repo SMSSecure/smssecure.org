@@ -74,7 +74,10 @@ getCacheTime = function(callback){
 getData = function(callback){
 	getCacheTime(function(err, time){
 		var cache = parseInt(process.env.CACHE) || 5;
-		if (err || time >= cache){
+		if (err) {
+			console.log('Error when fetching data...');
+			return callback(err);
+		} else if (time >= cache){
 			updateCache(function(err, json){
 				console.log('Updating cache...');
 				return callback(err, json);
