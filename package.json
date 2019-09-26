@@ -17,7 +17,6 @@
     "node": "8.x.x"
   },
   "dependencies": {
-    "async": "^3.1.0",
     "bootstrap": "^4.3.1",
     "ejs": "^2.6.2",
     "express": "^4.17.1",
