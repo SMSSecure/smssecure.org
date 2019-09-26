@@ -111,7 +111,5 @@ app.get('/privacy', function(req, res) {
 });
 
 var server = app.listen(parseInt(process.env.PORT) || 3000, function () {
-	updateCache(function () {
-		console.log('App listening at http://%s:%s', server.address().address, server.address().port);
-	});
-});
+	console.log('App listening at http://%s:%s', server.address().address, server.address().port);
+})
