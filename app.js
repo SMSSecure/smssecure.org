@@ -34,6 +34,8 @@ app.use(i18n.init);
 app.use(express.static(__dirname + '/assets'));
 app.set('view engine', 'ejs');
 
+var cache = parseInt(process.env.CACHE) || 5;
+
 updateCache = function(callback){
 	request('https://git.silence.dev/api/v4/projects/20/repository/commits', {timeout: parseInt(process.env.TIMEOUT) || 2000, headers: {'User-Agent': 'Silence Website'}}, function (err, res) {
 		if (err || typeof res == 'undefined' || typeof res.statusCode == 'undefined' || res.statusCode != 200) return callback(true);
@@ -52,15 +54,17 @@ getCache = function(callback){
 };
 
 getCacheTime = function(callback){
-	fs.stat('./cache-commits.json', function(err, stats){
-		if (err) return callback(err);
-		return callback(null, Math.floor((new Date().getTime()-stats.mtime.getTime())/1000/60));
+	fs.access('./cache-commits.json', fs.constants.F_OK | fs.constants.W_OK, function(err) {
+		if (err) return callback(null, cache+1);
+		fs.stat('./cache-commits.json', function(err, stats){
+			if (err) return callback(err);
+			return callback(null, Math.floor((new Date().getTime()-stats.mtime.getTime())/1000/60));
+		});
 	});
 };
 
 getData = function(callback){
 	getCacheTime(function(err, time){
-		var cache = parseInt(process.env.CACHE) || 5;
 		if (err) {
 			console.log('Error when fetching data...');
 			return callback(err);

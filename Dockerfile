@@ -1,4 +1,4 @@
-FROM node:8
+FROM node:12
 
 RUN apt-get update && apt-get install git -y --no-install-recommends && mkdir -p /opt/app
 WORKDIR /opt/app

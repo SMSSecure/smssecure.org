@@ -14,7 +14,7 @@
   "author": "Bastien Le Querrec",
   "license": "AGPL-3.0",
   "engines": {
-    "node": "8.x.x"
+    "node": "12.x.x"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
