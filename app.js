@@ -114,6 +114,10 @@ app.get('/privacy', function(req, res) {
 	return res.redirect('/#privacy');
 });
 
+app.get('/donate', function(req, res) {
+	return res.redirect('/#bitcoin');
+});
+
 var server = app.listen(parseInt(process.env.PORT) || 3000, function () {
 	console.log('App listening at http://%s:%s', server.address().address, server.address().port);
 })
