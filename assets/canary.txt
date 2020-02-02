@@ -1,23 +1,23 @@
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
-As of today, 2019-12-01, Silence has not been compromised. There
+As of today, 2020-02-02, Silence has not been compromised. There
 is no backdoor and no known security breach has been left.
 
 This canary should be updated and resigned every two months.
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEJoTs72B2Glsln0XMh41tCR7eCYkFAl3kCy8ACgkQh41tCR7e
-CYmfhQ/+OZqZxSQ3pEj+hDtegMvu3ZSyHpz9VgWwzwUGmXUS3UCFfXQpinc5V9BA
-x+9qRXhlHHdfYVyQ8UGUtaSkQoln8iogHmmNKEKPgkmEyuRDltYhz6N566ZZzwzg
-t++RtYe1zxnF1IcGG046P25JGj5EegvlbEfNyxlC7rfopJKkctrnU336vhi5wD9U
-UTLxdPqlGv6TJ7txThfVZymhMspJyBWSY4IUv9rgMYAmOKS6kQJaXis2fCwjLgas
-z5Tzg1Ux2Jy1nFp+gEXV3Wjl0keGE4o52u7UsoMjxQTYrAd0JI6spdJds1KatmBa
-l9c4LLscxl89nNmjWBWI1Z8bblAPAhbJ2S8CDZ7nvE5dJUVDO6iws/tLnj3TXBl3
-84mIIlC486zuS5s+6+FGLtcgIt3trKcuTdH4yHgPgK2RfLdNh/PDGDP0eYJDqsvG
-H3rBWPalXN9OW9Q+AziXw7+MA5U8vdvAAOKTqtewj2zuxZPL7W1XXQSktC+zk8fQ
-dl9mmql3RDi1WDFMxDDydjvyL8Mbut8Xz4vCGtRsEn4hTb7ZwETZbZ+qW6Zd6O9q
-E/kyIGFOMpFKzKD18yzz5T2ty0cjAHi8QD3eBTUvRFhtBuFKbg+z+G70AViP2hJY
-9Yh4rdMAavN0fCM4Emg99LzNrkco+ZTVsOqJe0nPYPgpfmn6fwk=
-=6TfU
+iQIzBAEBCgAdFiEEJoTs72B2Glsln0XMh41tCR7eCYkFAl42sAUACgkQh41tCR7e
+CYmzGQ//bUAyANDXqv8mZ1cvNQGuh1cg078mqIruSatofsyYvd/OuFiaEztBKKjr
+oQigjp0aRxivawJ2BHZQTRLG4iSk3W62M33eAni1yDdEihi/S9M2mZBII7nH7VpV
+qdQZejIuloD89b36xkYf2O8lOkoxGqN9bMpvOV6xMkRLE3uofGI/YAiedohnZ7If
+cMzLt8odvxlzmagzFkfTMsJtv6lI87as/DlI2yFdHV+rDETTOvjpVB6lqydqss8g
+vPznl+obYxpcnNwLhCefOMuq65w6/yIdGrEf51ApY5KnYg4TGUS33T28RmdPxCV9
+p9p2mRiO5mCnOQMww9MvoXbRGDTrRlvkGdsiBSF7bUfxm4A3Tk6XjSsf268RTj9X
+Y2vif320Lgt4MXLHmk48+aLubsRdu6knSjRLmVfP2NJUn8uDwYy5N2dhWhBZjvAm
+41XPKu5JglmUoXu/DnBrQF9kCiGs10fyV+N26HCI9DSUlVX9fXo9DYnqCAT+smU5
+4x/re12Yj30KceX02iy3ubs4MIW/t4BIoVKTUqfniWcXytPkwGNmRWGfqDtNsS8O
+CxTAThDHu7rZivg7hqQi/vkfaDGvlGX734lKDo/dOpDyVe80amMuQnr1rQemWivM
+bqhkHWtOqCAuIIxj7tt8If/xfeQsh7XRs7JLNtJmyrvJyYeDfN8=
+=JH9i
 -----END PGP SIGNATURE-----

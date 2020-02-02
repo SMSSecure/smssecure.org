@@ -1,4 +1,4 @@
-As of today, 2019-12-01, Silence has not been compromised. There
+As of today, 2020-02-02, Silence has not been compromised. There
 is no backdoor and no known security breach has been left.
 
 This canary should be updated and resigned every two months.
