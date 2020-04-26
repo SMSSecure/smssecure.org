@@ -91,7 +91,7 @@ app.get('/', function (req, res) {
 		if (!err){
 			commit = {};
 			commit.message = commits[0].message.split('\n')[0];
-			commit.date = moment(commits[0].authored_date).fromNow();
+			commit.date = moment(commits[0].committed_date).fromNow();
 			commit.author = commits[0].author_name;
 			commit.link = 'https://git.silence.dev/Silence/Silence-Android/commit/'+commits[0].id;
 		}
