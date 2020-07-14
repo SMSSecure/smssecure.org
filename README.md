@@ -1,3 +1,5 @@
+**DEPRECATED. See https://git.silence.dev/Silence/silence.im**
+
 Website of the Silence project.
 
 ## Installation
